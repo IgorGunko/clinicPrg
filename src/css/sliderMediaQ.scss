@@ -1,0 +1,20 @@
+@media #{$tableMode} {
+
+}
+
+@media #{$mobileMode} {
+  .swiper-slides {
+    .slide-title{
+      margin-top: 50px;
+      font-size: 30px;
+      line-height: 35px;
+    }
+    .slide-description{
+
+    }
+    a{
+      width: 100%;
+    }
+  }
+}
+

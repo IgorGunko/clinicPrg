@@ -1,0 +1,72 @@
+@media #{$tableMode} {
+
+}
+
+
+@media #{$mobileMode} {
+	.navbar-toggle{
+		border: 1px solid $site-color;
+		.icon-bar {
+			background-color: $site-color;
+		}
+	}
+	.navbar-collapse{
+		padding: 0;
+	}
+	.navbar-nav{
+		margin: 0;
+		li{
+			display: block;
+			text-align: left;
+			a{
+				background-color: transparent;
+				border-top: none;
+				&:hover{
+					border-top: none;
+				}
+				&:focus{
+					border-top: none;
+				}
+			}
+		}
+	}
+	.dropdown-content {
+		padding-left: 0;
+		padding-top: 10px;
+		ul{
+			padding-left: 30px;
+
+			span{
+				font-size: 25px;
+				width: 100%;
+			}
+		}
+	}
+	.contact-right {
+		margin: 15px 0;
+		ul{
+			.contact-btn{
+				margin-top: 15px;
+				margin-left: 0;
+				width: 100%;
+			}
+		}
+	}
+	.contact-right{
+		.time-dropdown {
+			width: 100%;
+			left: 0;
+			.row{
+				margin: 0;
+				margin-top: 15px;
+			}
+		}
+	}
+
+
+
+}
+@media #{$iPhone5} {
+
+
+}
