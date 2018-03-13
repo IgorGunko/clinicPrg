@@ -7,10 +7,22 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.progress-item{
+  text-align: center;
+  p{
+    font-size: 16px;
+    margin-top: 55px;
+    padding: 0px 55px;
+    display: inline-block;
+    color: #fff;
+    letter-spacing: 0.9px;
+  }
+}
 
 .progress-circle{
-  margin: 20px;
+  margin-top: 50px;
   width: 200px;
   height: 200px;
   position: relative;
+  display: inline-block;
 }
