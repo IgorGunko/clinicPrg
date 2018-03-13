@@ -1,0 +1,47 @@
+$backround-manipulation-wrapper: #fbfbfb;
+// @font-face {
+// 	font-family: Myriad_Pro;
+// 	src: url(../fonts/Myriad_Pro/Myriad_Pro_Regular.ttf);
+// }
+// 	@font-face {
+// 	font-family: Open_Sans;
+// 	src: url(../fonts/Open_Sans/Open_Sans_Regular.ttf);
+// }
+* {
+	/*border: solid 1px red;*/
+}
+.clinic-manipulation-wrapper {
+
+}
+.clinic-manipulation-wrapper_color {
+	background-color: $backround-manipulation-wrapper;
+}
+.img-description-wrapper {
+	padding: 54px 0 125px 0;
+}
+.description-wrapper {
+	width: 100%;
+	position: relative;
+	bottom: 22px;
+	padding: 5px 0 4px 0;
+	p {
+		font-size: 16px;
+		font-family: "Open_Sans";
+		color: rgb(51, 51, 51);
+		line-height: 1.5;
+		width: 80%;
+		background-color: $backround-manipulation-wrapper;
+		margin: 26px auto;
+		}
+	p:first-child {
+		font-size: 20px;
+		width: 65%;
+		margin: 5px auto;
+		}
+	p:first-child:hover {
+		color:rgb(96, 184, 183);
+		}
+}
+.description-wrapper_borer_right {
+	border-right: solid 1px #e6e6e6;
+}

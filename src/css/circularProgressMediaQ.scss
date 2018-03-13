@@ -1,0 +1,10 @@
+@media #{$tableMode} {
+
+}
+
+@media #{$mobileMode} {
+  .circular-progress{
+    height: auto;
+
+  }
+}
