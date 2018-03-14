@@ -11,9 +11,9 @@ $('.progress-circle').each(function(i) {
         easing: 'linear',
         strokeWidth: 5,
         duration: 1500,
-        //trailColor: '#b0cecc',
-        //trailWidth: 3,
-        fill: 'rgba(0, 0, 0, 0.1)',
+        trailColor: '#b0cecc',
+        trailWidth: 5,
+        //fill: 'rgba(0, 0, 0, 0.1)',
         text: {
             value: '0'
         }
