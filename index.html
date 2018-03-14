@@ -369,6 +369,135 @@
 	<a href="" class="center-block">УЗНАТЬ ПОДРОБНЕЕ</a>
 </div>
 
+<!--<li><span class="time dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"> ЧАСЫ РАБОТЫ</span>-->
+	<!--<ul class="time-dropdown" aria-labelledby="dropdownMenu1">-->
+
+
+<section class="process-section">
+	<div class="container">
+		<div class="row process-timeline">
+			<div class="pt-timeline ">
+				<div class="pt-timeline__backside-bar">
+					<div class="pt-timeline__frontside-bar">
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div id="step1" data-toggle="dropdown">
+				<div class="pt-action-bar" aria-labelledby="step1">
+					<div class="pt-action-bar-button__background-number">
+						01
+					</div>
+					<div class="pt-action-bar-button-icon">
+						<div class="pt-action-bar-button-icon__inner-ring-1">
+						</div>
+						<div class="pt-action-bar-button-icon__inner-ring-2">
+						</div>
+						<div class="pt-action-bar-button-icon__inner-ring-3">
+						</div>
+						<div class="pt-action-bar-button-icon__inner-ring-4">
+						</div>
+						<div class="pt-action-bar-button-icon__inner-ring-5">
+						</div>
+						<div class="pt-action-bar-button-icon__inner-ring-6">
+						</div>
+					</div>
+					<div class="pt-action-bar-button__title">
+						Шаг Первый
+					</div>
+					<div class="pt-action-bar-button__text">Клиника ICSI создана с целью дарить людям счастье.
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div id="step2" data-toggle="dropdown">
+					<div class="pt-action-bar"  aria-labelledby="step2">
+						<div class="pt-action-bar-button__background-number">
+							01
+						</div>
+						<div class="pt-action-bar-button-icon">
+							<div class="pt-action-bar-button-icon__inner-ring-1">
+							</div>
+							<div class="pt-action-bar-button-icon__inner-ring-2">
+							</div>
+							<div class="pt-action-bar-button-icon__inner-ring-3">
+							</div>
+							<div class="pt-action-bar-button-icon__inner-ring-4">
+							</div>
+							<div class="pt-action-bar-button-icon__inner-ring-5">
+							</div>
+							<div class="pt-action-bar-button-icon__inner-ring-6">
+							</div>
+						</div>
+						<div class="pt-action-bar-button__title">
+							Шаг Второй
+						</div>
+						<div class="pt-action-bar-button__text">Клиника ICSI создана с целью дарить людям счастье.
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div id="step3" data-toggle="dropdown">
+					<div class="pt-action-bar"  aria-labelledby="step3">
+						<div class="pt-action-bar-button__background-number">
+							01
+						</div>
+						<div class="pt-action-bar-button-icon">
+							<div class="pt-action-bar-button-icon__inner-ring-1">
+							</div>
+							<div class="pt-action-bar-button-icon__inner-ring-2">
+							</div>
+							<div class="pt-action-bar-button-icon__inner-ring-3">
+							</div>
+							<div class="pt-action-bar-button-icon__inner-ring-4">
+							</div>
+							<div class="pt-action-bar-button-icon__inner-ring-5">
+							</div>
+							<div class="pt-action-bar-button-icon__inner-ring-6">
+							</div>
+						</div>
+						<div class="pt-action-bar-button__title">
+							Шаг Третий
+						</div>
+						<div class="pt-action-bar-button__text">Клиника ICSI создана с целью дарить людям счастье.
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div id="step4" data-toggle="dropdown">
+					<div class="pt-action-bar" aria-labelledby="step4">
+						<div class="pt-action-bar-button__background-number">
+							01
+						</div>
+						<div class="pt-action-bar-button-icon">
+							<div class="pt-action-bar-button-icon__inner-ring-1">
+							</div>
+							<div class="pt-action-bar-button-icon__inner-ring-2">
+							</div>
+							<div class="pt-action-bar-button-icon__inner-ring-3">
+							</div>
+							<div class="pt-action-bar-button-icon__inner-ring-4">
+							</div>
+							<div class="pt-action-bar-button-icon__inner-ring-5">
+							</div>
+							<div class="pt-action-bar-button-icon__inner-ring-6">
+							</div>
+						</div>
+						<div class="pt-action-bar-button__title">
+							Шаг Четвертый
+						</div>
+						<div class="pt-action-bar-button__text">Клиника ICSI создана с целью дарить людям счастье.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
 <script src="dist/bundle.js"></script>
@@ -389,6 +518,22 @@
         autoplay: 3000,
         speed: 600
     });
+
+    $(document).ready(function() {
+        $('#step1').click(function(){
+            $('.pt-timeline__frontside-bar').css("width", "0");
+    	});
+        $('#step2').click(function(){
+            $('.pt-timeline__frontside-bar').css("width", "33%");
+    	});
+        $('#step3').click(function(){
+            $('.pt-timeline__frontside-bar').css("width", "67%");
+    	});
+        $('#step4').click(function(){
+            $('.pt-timeline__frontside-bar').css("width", "100%");
+    	});
+    });
+
 </script>
 </body>
 </html>
