@@ -382,7 +382,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-3 active-step">
 				<div id="step1" data-toggle="dropdown">
 				<div class="pt-action-bar" aria-labelledby="step1">
 					<div class="pt-action-bar-button__background-number">
@@ -520,6 +520,8 @@
     });
 
     $(document).ready(function() {
+        $( ".active-step" ).addClass( "open" );
+
         $('#step1').click(function(){
             $('.pt-timeline__frontside-bar').css("width", "0");
     	});
