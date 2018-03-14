@@ -343,7 +343,7 @@ ul.time-dropdown {
 	}
 }
 .navbar-brand {
-	display: none;
+	opacity: 0;
 	width: 44px;
 	height: 60px;
 	position: absolute;
@@ -351,7 +351,7 @@ ul.time-dropdown {
 	left: 5px;
 	background-size: cover;
 	background-image: url('img/logo.png');
-	transition: 2s;
+	transition: opacity 1s;
 }
 
 .affix {
@@ -366,7 +366,7 @@ ul.time-dropdown {
 }
 
 .affix .navbar-brand {
-	display: block;
+	opacity: 1;
 }
 
 
