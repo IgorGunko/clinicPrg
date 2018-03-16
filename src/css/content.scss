@@ -9,12 +9,45 @@
 * {
 	/*border: solid 1px red;*/
 }
-
-.backround-description-manipulation-wrapper {
+.animation-background {
 	background-color: $backgroundColorDMW;
+	margin: 55px 0;
 }
 .indents-description-wrapper {
-	padding: 54px 0 125px 0;
+	padding: 30px 0 45px 0;
+}
+.emphasize-background {
+	position: relative;
+	a {
+		display: none;
+		position: absolute;
+		bottom: 30px;
+		right: 20px;
+		i {
+			color: $site-color;
+			width: 25px;
+			height: 25px;
+			display: inline-block;
+			border: 2px solid $site-color;
+			border-radius: 100%;
+			text-align: center;
+			font-size: 16px;
+			font-weight: bold;
+			padding-top: 2px;
+		}
+	}
+	&:hover {
+		background-color: $emphasizeBackgroundColorDMW;
+		a {
+			display: block;
+		}
+		p {
+			background-color: $emphasizeBackgroundColorDMW;
+		}
+		.description-wrapper_borer_right {
+			border-right: none;
+		}
+	}
 }
 .description-wrapper {
 	width: 100%;
@@ -29,21 +62,22 @@
 		width: 80%;
 		background-color: $backgroundColorDMW;
 		margin: 26px auto;
+		&:first-child {
+			font-size: 20px;
+			width: 65%;
+			margin: 5px auto;
+			&:hover {
+				color: $site-color;
+			}
 		}
-	p:first-child {
-		font-size: 20px;
-		width: 65%;
-		margin: 5px auto;
-		}
-	p:first-child:hover {
-		color: $emphasizeFontColorDMW;
-		}
+	}
 }
 .description-wrapper_borer_right {
 	border-right: solid 1px #e6e6e6;
 }
 .indents-manipulation-wrapper {
-	padding: 54px 5px 125px 5px;
+	padding: 30px 10px 45px 10px;
+	min-height: 400px;
 }
 .manipulation-wrapper {
 	p {
@@ -64,9 +98,9 @@
 		width: 100%;
 		font-size: 20px;
 		margin: 2px 0 0 10px;
-	}
-	p:hover {
-		color: $emphasizeFontColorDMW;
+		&:hover {
+			color: $site-color;
+		}
 	}
 }
 
