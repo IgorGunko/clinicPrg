@@ -1,0 +1,107 @@
+@font-face {
+	font-family: Myriad_Pro;
+	src: url(fonts/Myriad_Pro/Myriad_Pro_Regular.ttf);
+}
+@font-face {
+	font-family: Open_Sans;
+	src: url(fonts/Open_Sans/Open_Sans_Regular.ttf);
+}
+* {
+	/*border: solid 1px red;*/
+}
+
+.backround-description-manipulation-wrapper {
+	background-color: $backgroundColorDMW;
+}
+.indents-description-wrapper {
+	padding: 54px 0 125px 0;
+}
+.description-wrapper {
+	width: 100%;
+	position: relative;
+	bottom: 22px;
+	padding: 5px 0 4px 0;
+	p {
+		font-size: 16px;
+		font-family: "Open_Sans";
+		color: $fontColorDMW;
+		line-height: 1.5;
+		width: 80%;
+		background-color: $backgroundColorDMW;
+		margin: 26px auto;
+		}
+	p:first-child {
+		font-size: 20px;
+		width: 65%;
+		margin: 5px auto;
+		}
+	p:first-child:hover {
+		color: $emphasizeFontColorDMW;
+		}
+}
+.description-wrapper_borer_right {
+	border-right: solid 1px #e6e6e6;
+}
+.indents-manipulation-wrapper {
+	padding: 54px 5px 125px 5px;
+}
+.manipulation-wrapper {
+	p {
+		font-size: 16px;
+		font-family: "Open_Sans";
+		color: $fontColorDMW;
+		line-height: 1.5;
+		width: 100%;
+		margin: 26px auto;
+	}
+}
+.manipulation__heading {
+	width: 90%;
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 52px;
+	p {
+		width: 100%;
+		font-size: 20px;
+		margin: 2px 0 0 10px;
+	}
+	p:hover {
+		color: $emphasizeFontColorDMW;
+	}
+}
+
+.sleeping-baby {
+	background-image: url("img/sliping_baby.png");
+	height: 435px; 
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	p {
+		display: inline-block;
+		max-width: 700px;
+		font-size: 48px;
+		font-family: "Myriad_Pro";
+		color: rgba(50, 28, 93, 0.969);
+		line-height: 1.25;
+		text-align: center;
+		padding-top: 100px;
+	}
+	a {
+		font-size: 12px;
+		font-family: "Myriad_Pro";
+		color: rgb(255, 255, 255);
+		line-height: 45px;
+		background-color: $site-color;
+		height: 45px;
+		width: 225px;
+		border: none;
+		margin: 110px auto 75px auto;
+		text-decoration: none;
+		letter-spacing: 1.5px;
+		&:hover{
+			background-color: #54cac8;
+		}
+	}
+}
+
