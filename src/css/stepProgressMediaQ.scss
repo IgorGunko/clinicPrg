@@ -3,6 +3,9 @@
 .pt-action-bar-button__text {
     max-width: 300px;    
 }
+  .pt-timeline {
+    display: none;
+  }
 }
 
 @media #{$mobileMode} {
