@@ -76,13 +76,22 @@
         border: 1px solid $site-color;
         border-radius: 100%;
         background-color: $site-color;
-
+      }
+      .telegram{
+        border: 1px solid #139bd0;
+        background-color: #139bd0;
+        font-size: 20px;
         &:hover{
-          border: 1px solid #4ececc;
-          background-color: #4ececc;
+          border: 1px solid #41b8e6;
+          background-color: #41b8e6;
         }
-        .glyphicon-send{
-          font-size: 20px;
+      }
+      .messenger{
+        border: 1px solid #0089ff;
+        background-color: #0089ff;
+        &:hover{
+          border: 1px solid #0075ff;
+          background-color: #0075ff;
         }
       }
     }
