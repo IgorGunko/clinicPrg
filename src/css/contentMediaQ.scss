@@ -1,10 +1,124 @@
 @media #{$tableMode} {
+	.indents-description-wrapper {
+		padding: 25px 0 35px 0;
+	}
+	.emphasize-background {
+		a {
+			bottom: 25px;
+			right: 15px;
+		}
+	}
+	.description-wrapper {
+		padding: 0;
+		p {
+			font-size: 15px;
+			width: 90%;
+			margin: 15px auto;
+			text-align: center;
+			&:first-child {
+				font-size: 19px;
+				width: 80%;
+				text-align: center;
+			}
+		}
+	}
+	.description-wrapper_borer_right {
+		border-right: none;
+	}
 
+	.indents-manipulation-wrapper {
+	padding: 25px 8px 40px 8px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	min-height: 330px;
+	}
+	.manipulation-wrapper {
+		p {
+			font-size: 15px;
+			// margin: 20px auto;
+			text-align: center;
+		}
+	}
+	.manipulation__heading {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 25px;
+		p {
+			width: 65%;
+			font-size: 19px;
+			margin: 0 0 0 8px;
+			/*height: 100px;*/
+
+		}
+	}
 }
-
 @media #{$mobileMode} {
+	.indents-description-wrapper {
+		padding: 15px 0 20px 0;
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+	.emphasize-background {
+		background-color: $emphasizeBackgroundColorDMW;
+		a {
+			bottom: 15px;
+			right: 10px;
+			display: block;
+		}
+		p {
+			background-color: $emphasizeBackgroundColorDMW;
+		}
+	}
+	.description-wrapper {
+		padding: 0;
+		p {
+			font-size: 14px;
+			width: 90%;
+			margin: 15px auto;
+			text-align: center;
+			&:first-child {
+				font-size: 18px;
+				width: 70%;
+				text-align: center;
+			}
+		}
+	}
+	.description-wrapper_borer_right {
+		border-right: none;
+	}
 
+	.indents-manipulation-wrapper {
+		padding: 15px 5px 35px 5px;
+		margin-bottom: 10px;
+		margin-top: 10px;
+		min-height: 100%;
+	}
+	.manipulation-wrapper {
+		p {
+			font-size: 14px;
+			margin: 15px auto;
+			text-align: center;
+		}
+	}
+	.manipulation__heading {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 0;
+		p {
+			width: 50%;
+			font-size: 18px;
+			margin: 0 0 0 8px;
+			/*height: auto;*/
+		}
+	}
+
+	.sleeping-baby {
+		p {
+			font-size: 30px;
+		}
+	}
 }
-
-
-
