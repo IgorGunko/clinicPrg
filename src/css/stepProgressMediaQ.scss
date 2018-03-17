@@ -1,10 +1,18 @@
 
 @media #{$tableMode} {
-.pt-timeline {
-	display: none;
-	
-}
 .pt-action-bar-button__text {
     max-width: 300px;    
 }
+}
+
+@media #{$mobileMode} {
+  .process-timeline {
+    margin-top: 45px;
+  }
+  .pt-timeline {
+    display: none;
+  }
+  .pt-action-bar-button__text {
+    max-width: 300px;
+  }
 }
