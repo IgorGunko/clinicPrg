@@ -16,10 +16,12 @@
 					<div class="lang-menu">
 						<ul>
 							<li><a href="" class="active-lang">RU</a>
-								<ul class="lang-dropdown">
-									<li><a href="">EN</a></li>
-									<li><a href="">UA</a></li>
-								</ul>
+								<div class="lang-dropdown">
+									<ul>
+										<li><a href="">EN</a></li>
+										<li><a href="">UA</a></li>
+									</ul>
+								</div>
 							</li>
 						</ul>
 					</div>
@@ -110,8 +112,8 @@
 							<!-- Collect the nav links, forms, and other content for toggling -->
 							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 								<ul class="nav navbar-nav">
-									<li class="active"><a href="#">О клинике</a></li>
-									<li class="active"><a href="#">Диагностика</a></li>
+									<li><a href="#">О клинике</a></li>
+									<li><a href="#">Диагностика</a></li>
 									<li class="dropdown">
 										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Программы</span></a>
 										<ul class="dropdown-menu">
@@ -122,26 +124,58 @@
 												<ul>
 													<li><a href="">Внутриматочная инсеминация</a></li>
 													<li><a href="">Контролируемое зачатие</a></li>
-													<li><a href="">Экстракорпоральное оплодотворение </a></li>
+													<li><a href="">Экстракорпоральное оплодотворение (ЭКО) </a></li>
 													<li><a href="">ЭКО в естественном цикле</a></li>
-													<li><a href="">ЭКО с легкой стимуляцией</a></li>
-													<li><a href="">Программы для одиноких женщин</a></li>
-													<li><a href="">Репродуктивная иммунология</a></li>
+													<li><a href="">Мини-ЭКО (ЭКО с легкой стимуляцией)</a></li>
 												</ul>
 												<ul>
+													<li><a href="">Низкий овариальный резерв</a></li>
+													<li><a href="">Программы для одиноких женщин</a></li>
+													<li><a href="">Репродуктивная иммунология</a>
 													<li><a href="">Пробный эмбриотрансфер</a></li>
-													<li><a href="">Донорские программы</a></li>
-													<li><a href="">Программы сохранения фертильности</a></li>
-													<li><a href="">Эмбриология</a></li>
+												</ul>
+												<!--<div class="next-dropdown">-->
+													<!--<ul>-->
+														<!--<span>Программы генетических исследований</span>-->
+													<!--</ul>-->
+													<!--<ul>-->
+														<!--<li><a href="">PGS (DNA/CGH)</a></li>-->
+														<!--<li><a href="">PGD (FISH)</a></li>-->
+														<!--<li><a href="">Криотипирование</a></li>-->
+														<!--<li><a href="">Повторные неудачные программ ЭКО</a></li>-->
+													<!--</ul>-->
+													<!--<ul>-->
+														<!--<li><a href="">Пробный эмбриотрансфер</a></li>-->
+														<!--<li><a href="">Пробный эмбриотрансфер</a></li>-->
+														<!--<li><a href="">Донорские программы</a></li>-->
+														<!--<li><a href="">Программы сохранения фертильности</a></li>-->
+														<!--<li><a href="">Эмбриология</a></li>-->
+													<!--</ul>-->
+												<!--</div>-->
+											</div>
+										</ul>
+									</li>
+									<li><a href="#">Успешность</a></li>
+									<li><a href="#">Стоимость</a></li>
+									<li><a href="#">Гинекология</a></li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Акушерство</span></a>
+										<ul class="dropdown-menu">
+											<div class="dropdown-content">
+												<ul>
+													<span>Акушерство</span>
+												</ul>
+												<ul>
+													<li><a href="">УЗИ беременных</a></li>
+													<li><a href="">Учет беременных</a></li>
+													<li><a href="">Экстракорпоральное оплодотворение </a></li>
+													<li><a href="">Пренатальная инвазивная диагностика (биопсия ворсин хориона, амниоцентез)</a></li>
+													<li><a href="">Неинвазивный пренатальный тест</a></li>
 												</ul>
 											</div>
 										</ul>
 									</li>
-									<li class="active"><a href="#">Успешность</a></li>
-									<li class="active"><a href="#">Стоимость</a></li>
-									<li class="active"><a href="#">Гинекология</a></li>
-									<li class="active"><a href="#">Акушерство</a></li>
-									<li class="active"><a href="#">Блог</a></li>
+									<li><a href="#">Блог</a></li>
 								</ul>
 							</div><!-- /.navbar-collapse -->
 					</nav>
@@ -200,11 +234,11 @@
 		</div>
 	</div>
 </section>
-<div class="backround-description-manipulation-wrapper">
+<div class="animation-background">
 	<div class="container-fluid">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-6 col-md-3 col-xs-12 indents-description-wrapper">
+				<div class="col-sm-6 col-md-3 col-xs-12 indents-description-wrapper emphasize-background">
 					<img class="img-responsive center-block" src="src/img/description_item1.png">
 					<div class="description-wrapper description-wrapper_borer_right">
 						<p class="center-block">
@@ -217,8 +251,11 @@
 							Клиника ICSI создана с целью дарить людям счастье
 						</p>
 					</div>
+					<a href="">
+						<i class="fa fa-angle-right" aria-hidden="true"></i>
+					</a>
 				</div>
-				<div class="col-sm-6 col-md-3 col-xs-12 indents-description-wrapper">
+				<div class="col-sm-6 col-md-3 col-xs-12 indents-description-wrapper emphasize-background">
 					<img class="img-responsive center-block" src="src/img/description_item2.png">
 					<div class="description-wrapper description-wrapper_borer_right">
 						<p class="center-block">
@@ -231,8 +268,11 @@
 							Клиника ICSI создана с целью дарить людям счастье
 						</p>
 					</div>
+					<a href="">
+						<i class="fa fa-angle-right" aria-hidden="true"></i>
+					</a>
 				</div>
-				<div class="col-sm-6 col-md-3 col-xs-12 indents-description-wrapper">
+				<div class="col-sm-6 col-md-3 col-xs-12 indents-description-wrapper emphasize-background">
 					<img class="img-responsive center-block" src="src/img/description_item3.png">
 					<div class="description-wrapper description-wrapper_borer_right">
 						<p class="center-block">
@@ -245,13 +285,15 @@
 							Клиника ICSI создана с целью дарить людям счастье
 						</p>
 					</div>
+					<a href="">
+						<i class="fa fa-angle-right" aria-hidden="true"></i>
+					</a>
 				</div>
-				<div class="col-sm-6 col-md-3 col-xs-12 indents-description-wrapper">
+				<div class="col-sm-6 col-md-3 col-xs-12 indents-description-wrapper emphasize-background">
 					<img class="img-responsive center-block" src="src/img/description_item4.png">
 					<div class="description-wrapper">
 						<p class="center-block">
 							Генетические исследование в программах ВРТ
-
 						</p>
 						<p class="center-block">
 							Клиника ICSI создана с целью дарить людям счастье
@@ -260,6 +302,9 @@
 							Клиника ICSI создана с целью дарить людям счастье
 						</p>
 					</div>
+					<a href="">
+						<i class="fa fa-angle-right" aria-hidden="true"></i>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -289,11 +334,11 @@
 	</div>
 </section>
 
-<div class="backround-description-manipulation-wrapper">
+<div class="animation-background">
 	<div class="container-fluid">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-6 col-md-3 col-xs-12 indents-manipulation-wrapper">
+				<div class="col-sm-6 col-md-3 col-xs-12 indents-manipulation-wrapper emphasize-background">
 					<div class="manipulation-wrapper">
 						<div class="manipulation__heading">
 							<img class="img-responsive" src="src/img/manipulation_item1.png">
@@ -308,8 +353,11 @@
 							Клиника ICSI создана с целью дарить людям счастье
 						</p>
 					</div>
+					<a href="">
+						<i class="fa fa-angle-right" aria-hidden="true"></i>
+					</a>
 				</div>
-				<div class="col-sm-6 col-md-3 col-xs-12 indents-manipulation-wrapper">
+				<div class="col-sm-6 col-md-3 col-xs-12 indents-manipulation-wrapper emphasize-background">
 					<div class="manipulation-wrapper">
 						<div class="manipulation__heading">
 							<img class="img-responsive" src="src/img/manipulation_item2.png">
@@ -324,8 +372,11 @@
 							Клиника ICSI создана с целью дарить людям счастье
 						</p>
 					</div>
+					<a href="">
+						<i class="fa fa-angle-right" aria-hidden="true"></i>
+					</a>
 				</div>
-				<div class="col-sm-6 col-md-3 col-xs-12 indents-manipulation-wrapper">
+				<div class="col-sm-6 col-md-3 col-xs-12 indents-manipulation-wrapper emphasize-background">
 					<div class="manipulation-wrapper">
 						<div class="manipulation__heading">
 							<img class="img-responsive" src="src/img/manipulation_item3.png">
@@ -340,8 +391,11 @@
 							Клиника ICSI создана с целью дарить людям счастье
 						</p>
 					</div>
+					<a href="">
+						<i class="fa fa-angle-right" aria-hidden="true"></i>
+					</a>
 				</div>
-				<div class="col-sm-6 col-md-3 col-xs-12 indents-manipulation-wrapper">
+				<div class="col-sm-6 col-md-3 col-xs-12 indents-manipulation-wrapper emphasize-background">
 					<div class="manipulation-wrapper">
 						<div class="manipulation__heading">
 							<img class="img-responsive" src="src/img/manipulation_item4.png">
@@ -356,12 +410,14 @@
 							Клиника ICSI создана с целью дарить людям счастье
 						</p>
 					</div>
+					<a href="">
+						<i class="fa fa-angle-right" aria-hidden="true"></i>
+					</a>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-
 <div class="sleeping-baby">
 	<p class="center-block">
 		Программа ICSI с гарантией возврата 100% оплаты лечения

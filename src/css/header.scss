@@ -61,11 +61,23 @@ body{
 		display: none;
 		position: absolute;
 		padding-top: 10px;
-		border: 1px solid $site-color;
-		background-color: #f1f1f1;
-		border-top: none;
-		margin-top: -2px;
-		border-radius: 4px;
+		width: 70px;
+		left: -10px;
+		ul{
+			padding: 10px;
+			border: 1px solid $site-color;
+			border-top: none;
+			background-color: #fff;
+			li{
+				line-height: 22px;
+				a{
+					color: #333;
+					&:hover{
+						color: $site-color;
+					}
+				}
+			}
+		}
 	}
 }
 .contact-address{
@@ -132,6 +144,7 @@ body{
 			}
 			&:hover .time-dropdown{
 				display: block;
+				max-height: 160px;
 			}
 		}
 		.contact-btn{
@@ -150,6 +163,13 @@ body{
 	.time-dropdown{
 		position: absolute;
 		display: none;
+		-webkit-transition: max-height 1s;
+		-moz-transition: max-height 1s;
+		-ms-transition: max-height 1s;
+		-o-transition: max-height 1s;
+		transition: max-height 1s;
+		// "height: 0" not work with css transitions
+		max-height: 0;
 	}
 	.open .time-dropdown{
 		display: block;
@@ -157,6 +177,7 @@ body{
 }
 ul.time-dropdown {
 	position: relative;
+
 	.row{
 		margin-top: 7px;
 		padding: 0 10px 20px 0px;
@@ -350,6 +371,9 @@ ul.time-dropdown {
 			}
 		}
 	}
+}
+.next-dropdown{
+	margin-top: 20px;
 }
 .navbar-brand {
 	opacity: 0;

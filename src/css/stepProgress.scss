@@ -90,8 +90,8 @@
 	left: 44px;
 	position: absolute;
 	top: 44px;
-	background-color: $site-color;
-	border: 6px solid $site-color;
+	background-color: #00d563;
+	border: 6px solid #00d563;
 	border-radius: 100px;
 	box-shadow: 0 4px 8px 0 rgba(0,213,98,.4);
 	opacity: 0;
@@ -103,8 +103,8 @@
     left: 44px;
     position: absolute;
     top: 44px;
-    background-color: $site-color;
-    border: 6px solid $site-color;
+    background-color: #00d563;
+    border: 6px solid #00d563;
     border-radius: 100px;
 	transition: transform .4s ease;
 	transform: scale(.5);
@@ -123,8 +123,10 @@
 .pt-action-bar-button__title {
 	top: -20px;
 	position: relative;
+	font-family: AvertaStd;
 	font-weight: 500;
-	font-size: 17px;
+	font-size: 18px;
+
 	line-height: 24px;
 	color: #ccc;
 	transition: color .4s ease;
@@ -132,10 +134,10 @@
 .pt-action-bar-button__text {
     max-width: 160px;
     margin: 0 auto;
-	color: #888;
+	  color: #888;
     font-size: 14px;
     line-height: 24px;
-	opacity: 0;
+	  opacity: 0;
     transition: opacity .4s ease;    
 }
 
