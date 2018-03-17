@@ -1,5 +1,14 @@
+@font-face {
+	font-family: Myriad_Pro;
+	src: url(fonts/Myriad_Pro/Myriad_Pro_Regular.ttf);
+}
+@font-face {
+	font-family: Open_Sans;
+	src: url(fonts/Open_Sans/Open_Sans_Regular.ttf);
+}
+
 body{
-	//font-family: "OpenSans";
+	 font-family: "Open_Sans";
 }
 
 .contact{
@@ -38,7 +47,7 @@ body{
 				color: $site-color;
 				text-decoration: none;
 				border-radius: 100%;
-				padding: 5px 3px;
+				padding: 5px 6px;
 			}
 			.active-lang{
 				border: 1px solid $site-color;
