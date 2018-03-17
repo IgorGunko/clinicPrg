@@ -22,7 +22,7 @@
 	top: 0;
 	left: 0;
 	position: absolute;
-	background-color: #00d563;
+	background-color: $site-color;
 	transition: width .4s ease;
 }
 .pt-action-bar {
@@ -35,7 +35,6 @@
 	left: 50%;
 	position: absolute;
 	color: #ebebeb;
-	font-family: AvertaStd;
 	font-weight: 800;
 	font-size: 100px;
 	line-height: 1em;
@@ -127,16 +126,18 @@
 	font-family: AvertaStd;
 	font-weight: 500;
 	font-size: 18px;
+
 	line-height: 24px;
 	color: #ccc;
 	transition: color .4s ease;
 }
 .pt-action-bar-button__text {
-	color: #888;
-    font-family: AvertaStd;
+    max-width: 160px;
+    margin: 0 auto;
+	  color: #888;
     font-size: 14px;
     line-height: 24px;
-	opacity: 0;
+	  opacity: 0;
     transition: opacity .4s ease;    
 }
 

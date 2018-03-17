@@ -1,13 +1,10 @@
-//.process-timeline .pt-timeline {
-//	top: 57px;
-//    left: 85px;
-//    right: 85px;
-//    position: absolute;
-//    height: 26px;
-//}
-//.process-timeline .pt-action-bar {
-//    position: relative;
-//    flex-direction: row;
-//    align-items: flex-start;
-//    justify-content: space-between;
-//}
+
+@media #{$tableMode} {
+.pt-timeline {
+	display: none;
+	
+}
+.pt-action-bar-button__text {
+    max-width: 300px;    
+}
+}

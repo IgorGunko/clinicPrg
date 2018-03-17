@@ -1,6 +1,33 @@
 @media #{$tableMode} {
-
+.footer {
+  height: auto;
+}
 }
 @media #{$mobileMode} {
-
+.footer {
+  height: auto;
+}
+.footer-menu{
+  margin-top: 30px;
+  ul{
+  	text-align: center;
+    padding-left: 0%;
+    width: 100%;
+    li {
+    	a {
+    		font-size: 14px;
+    	}
+    }
+  }
+}
+.socials {
+  margin-top: 25px;
+  ul {
+  	margin-bottom: 30px;
+  	li {
+  		margin: 0 20px;
+  		padding-left: 0;
+  	}
+  }
+  }
 }
