@@ -36,6 +36,7 @@
 		font-size: 30px;
 		letter-spacing: 0.7px;
 		color: $textColorPrise;
+		line-height: 1.267;
 	}
 	.gallery {
 		margin: 0 0 50px 30px ;
@@ -43,7 +44,6 @@
 			max-width: 304px;
 			p {
 			font-size: 14px;
-			color: rgb(51, 51, 51);
 			line-height: 1.857;
 			letter-spacing: 0.35px;
 			margin: 0;
@@ -61,6 +61,72 @@
 						color: $site-color;
 						font: normal normal normal 17px/1 FontAwesome;
 						margin-right: 9px;
+					}
+				}
+			}
+		}
+	}
+}
+@media #{$tableMode} {
+	.main-team {
+		ol {
+			padding: 20px 0 0 15px;
+			>li+li:before {
+				font: normal normal normal 16px/1 FontAwesome;
+				padding: 0 7px;
+				position: relative;
+				bottom: 1px;
+			}
+			li {
+				font-size: 14px;
+			}
+		}
+		h1 {
+			margin: 25px 15px;
+			font-size: 25px;
+			letter-spacing: 0.5px;
+		}
+		.gallery {
+			margin: 0 0 25px 15px;
+			.gallery-description {
+				p {
+				font-size: 13px;
+				letter-spacing: 0.3px;
+					&:first-child {
+						font-size: 19px;
+						margin: 18px 0 0 0;
+						letter-spacing: 0.8px;
+					}
+					&:last-child {
+						margin: 10px 0 30px 0;
+						&:before {
+							font: normal normal normal 14px/1 FontAwesome;
+							margin-right: 5px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media #{$mobileMode} {
+	.main-team {
+		text-align: center;
+		ol {
+			padding: 20px 0 0 0px;
+		}
+		h1 {
+			margin: 25px 0;
+			font-size: 23px;
+		}
+		.gallery {
+			margin: 0;
+			.gallery-description {
+				p {
+					&:last-child {
+						margin: 5px 0 30px 0;
+						position: relative;
+						right: 10px;
 					}
 				}
 			}

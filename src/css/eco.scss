@@ -36,6 +36,7 @@
 		font-size: 30px;
 		letter-spacing: 0.7px;
 		color: $textColorPrise;
+		line-height: 1.267;
 	}
 	.pregnant-woman {
 		background-image: url("img/pregnant_woman.png");
@@ -62,14 +63,13 @@
 			&:after{
 				content: "\f105";
 				color: $site-color;
-				font: normal normal normal 20px/1 FontAwesome;
+				font: normal normal normal 16px/1 FontAwesome;
 				padding: 3px 9px 0 9px;
 				width: 25px;
 				height: 25px;
 				display: inline-block;
 				border: 1px solid $site-color;
 				border-radius: 100%;
-				font-size: 16px;
 				font-weight: bold;
 				margin-left: 10px;
 			}
@@ -77,7 +77,7 @@
 	}
 	.table {
 		margin: 0 0 130px 30px;
-		max-width: 720px;
+		max-width: 96%;
 		th {
 			height: 74px;
 			vertical-align: middle;
@@ -101,6 +101,75 @@
 			}
 			a {
 				color: $site-color;
+			}
+		}
+	}
+}
+@media #{$tableMode} {
+	.main-eco {
+		ol {
+			padding: 20px 0 0 15px;
+			>li+li:before {
+				font: normal normal normal 16px/1 FontAwesome;
+				padding: 0 7px;
+				position: relative;
+				bottom: 1px;
+			}
+			li {
+				font-size: 14px;
+			}
+		}
+		h1 {
+			margin: 25px 15px;
+			font-size: 25px;
+			letter-spacing: 0.5px;
+		}
+		.pregnant-woman {
+			margin:0 0 25px 15px;
+			p {
+				font-size: 20px;
+			}
+			a {
+				font-size: 12px;
+			}
+		}
+		.table {
+			margin: 0 0 50px 15px;
+			max-width: 98%;
+		}
+	}
+}
+@media #{$mobileMode} {
+	.main-eco {
+		text-align: center;
+		ol {
+			padding: 20px 0 0 0px;
+		}
+		h1 {
+			margin: 25px 0;
+			font-size: 23px;
+		}
+		.pregnant-woman {
+			margin:0 0 20px 0;
+			p {
+				padding-top: 60px;
+				font-size: 17px;
+				margin-bottom: 8px;
+			}
+		}
+		.table {
+			margin: 0 0 30px 0;
+			max-width: 100%;
+			th {
+				height: auto;
+				font-size: 14px;
+			}
+			td {
+				height: auto;
+				font-size: 12px;
+				&:last-child {
+					font-size: 10px;
+				}
 			}
 		}
 	}

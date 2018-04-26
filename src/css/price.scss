@@ -36,6 +36,7 @@
 		font-size: 30px;
 		letter-spacing: 0.7px;
 		color: $textColorPrise;
+		line-height: 1.267;
 	}
 	.table {
 		background-color: #f1f1f1;
@@ -83,5 +84,85 @@
 		img {
 			padding-right: 3px;
 		}
+	}
+}
+@media #{$tableMode} {
+	.main-price {
+		ol {
+			padding: 20px 0 0 15px;
+			>li+li:before {
+				font: normal normal normal 16px/1 FontAwesome;
+				padding: 0 7px;
+				position: relative;
+				bottom: 1px;
+			}
+			li {
+				font-size: 14px;
+			}
+		}
+		h1 {
+			margin: 25px 15px;
+			font-size: 25px;
+			letter-spacing: 0.5px;
+		}
+		.table {
+			margin: 30px 15px;
+			width: auto;
+			height: auto;
+			td {
+				vertical-align: middle;
+				font-size: 17px;
+			}
+			.download {
+				a {
+					color: $textColorPrise;
+					text-decoration: none;
+					margin: 0 55px;
+					&:hover {
+						color: $site-color;
+					}
+					span {
+						&:before {
+							content: "\f1c1";
+							padding-right: 15px;
+							font: normal normal normal 27px/1 FontAwesome;
+						}
+					}
+				}
+			}
+		}
+		p {
+			margin-left: 30px;
+			font-size: 17px;
+			line-height: 110%;
+			a {
+				color: $site-color;
+				/*text-decoration: none;*/
+			}
+		}
+		.icon-pay {
+			margin: 67px 50px;
+			p {
+				margin:0 0 20px 0;
+				font-size: 14px;
+				letter-spacing: 0.3px;
+			}
+			img {
+				padding-right: 3px;
+			}
+		}
+	}
+}
+@media #{$mobileMode} {
+	.main-price {
+		text-align: center;
+		ol {
+			padding: 20px 0 0 0px;
+		}
+		h1 {
+			margin: 25px 0;
+			font-size: 23px;
+		}
+
 	}
 }
