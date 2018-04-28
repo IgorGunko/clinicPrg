@@ -110,45 +110,29 @@
 			width: auto;
 			height: auto;
 			td {
-				vertical-align: middle;
-				font-size: 17px;
+				font-size: 15px;
 			}
 			.download {
 				a {
-					color: $textColorPrise;
-					text-decoration: none;
-					margin: 0 55px;
-					&:hover {
-						color: $site-color;
-					}
+					margin: 0 25px;
 					span {
 						&:before {
-							content: "\f1c1";
-							padding-right: 15px;
-							font: normal normal normal 27px/1 FontAwesome;
+							padding-right: 10px;
+							font: normal normal normal 20px/1 FontAwesome;
 						}
 					}
 				}
 			}
 		}
 		p {
-			margin-left: 30px;
-			font-size: 17px;
-			line-height: 110%;
-			a {
-				color: $site-color;
-				/*text-decoration: none;*/
-			}
+			margin-left: 15px;
+			font-size: 15px;
 		}
 		.icon-pay {
-			margin: 67px 50px;
+			margin: 34px 25px;
 			p {
-				margin:0 0 20px 0;
-				font-size: 14px;
-				letter-spacing: 0.3px;
-			}
-			img {
-				padding-right: 3px;
+				margin:0 0 10px 0;
+				font-size: 12px;
 			}
 		}
 	}
@@ -157,12 +141,25 @@
 	.main-price {
 		text-align: center;
 		ol {
-			padding: 20px 0 0 0px;
+			padding: 20px 0 0 0;
 		}
 		h1 {
 			margin: 25px 0;
 			font-size: 23px;
 		}
-
+		.table {
+			margin: 30px auto;
+			.download {
+				a {
+					margin: 0;
+				}
+			}
+		}
+		p {
+			margin-left: 0;
+		}
+		.icon-pay {
+			margin: 34px 0;
+		}
 	}
 }
