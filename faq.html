@@ -185,11 +185,118 @@
 </header>
 
 
+
 <section>
 
     <!--FAQ Content-->
+<div class="baby-and-parents">
+    <p>Ответы на частые вопросы</p>
+</div>
 
+<div class="container">
+    <div class="row">
+
+
+        <!--Блок меню-->
+
+
+        <div class="col-md-4">
+             <ol class="breadcrumb">
+                <li><a href="#">О клинике</a></li>
+                <li class="active">Програмы ЭКО</li>
+            </ol>
+
+            <ul class="main-menu">
+                <li class="dropdown-sub"><a href="#">История и достижение</a>
+                    <ul class="sub-menu">
+                        <li><a href="#1">Разработка</a></li>
+                        <li><a href="#2">Продвижение</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-sub"><a href="#">Успешность</a>
+                    <ul class="sub-menu">
+                        <li><a href="#1">Разработка</a></li>
+                        <li><a href="#2">Продвижение</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-sub"><a href="#">Наша команда</a>
+                    <ul class="sub-menu">
+                        <li><a href="#1">Разработка</a></li>
+                        <li><a href="#2">Продвижение</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-sub"><a href="#">Почему выбирают нас</a>
+                    <ul class="sub-menu">
+                        <li><a href="#1">Разработка</a></li>
+                        <li><a href="#2">Продвижение</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-sub"><a href="#">Цены</a>
+                    <ul class="sub-menu">
+                        <li><a href="#1">Разработка</a></li>
+                        <li><a href="#2">Продвижение</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-sub"><a href="#">Программы ЭКО</a>
+                    <ul class="sub-menu">
+                        <li><a href="#1">Разработка</a></li>
+                        <li><a href="#2">Продвижение</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-sub"><a href="#">Видео отзывы</a>
+                    <ul class="sub-menu">
+                        <li><a href="#1">Разработка</a></li>
+                        <li><a href="#2">Продвижение</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-sub"><a href="#">Конфиденциальность</a>
+                    <ul class="sub-menu">
+                        <li><a href="#1">Разработка</a></li>
+                        <li><a href="#2">Продвижение</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+
+
+        </div>
+        <div class="col-md-8 block-questions">
+           <h1 class="name-questions">Категория с ответами на вопросы</h1>
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                  <h4 class="panel-title">
+                    <a  data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                     Есть ли ситуация, когда операция противопоказана?
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="panel-body">
+                    <p>В целом, лечение варикоцеле хорошо переносится пациентами, однако к нему существует ряд противопоказаний.</p>
+                   <p>Склеротерапию не проводят пациентам, у которых:</p> 
+                    <ul>
+                        <li>
+                            Повышено давление в венах, расположенных рядом с пораженной областью;  
+                        </li>
+                         <li>
+                            Имеются анастомы больших размеров — склерозант может попасть в здоровые;    
+                        </li>
+                         <li>
+                            Из-за структуры вен в них нельзя ввести зонд.   
+                        </li>
+                    </ul>
+                    <p>Операция также противопоказана при наличии активных воспалительных процессов, а также после недавно перенесенного хирургического вмешательства на брюшной полости.</p>
+                  </div>
+                </div>
+              </div>
+             
+            </div>
+        </div>
+    </div>
+</div>
 </section>
+
 
 
 <div class="sleeping-baby">
@@ -259,6 +366,10 @@
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
 <script src="dist/bundle.js"></script>
-
+<script">
+    before.onclick = function(){
+    this.classList.toggle('rotate')
+    }
+</script>
 </body>
 </html>
