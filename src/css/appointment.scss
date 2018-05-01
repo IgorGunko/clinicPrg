@@ -82,9 +82,27 @@
 			border-left: none;
 			border-right: none;
 			display: block;
+			width: 35%;
+
 			&:focus {
 				outline: none;
 				border-bottom: 1px solid #54cac8;
+			}
+		}
+		textarea {
+			margin-top: 10px;
+			border-left: none;
+			border-right: none;
+			height: 90px;
+			width: 98%;
+			border-bottom: 1px solid #dbdbdb;
+			border-top: 1px solid #dbdbdb;
+			padding: 15px;
+
+			&:focus {
+				outline: none;
+				border-bottom: 1px solid #54cac8;
+				border-top: 1px solid #54cac8;
 			}
 		}
 		[type="submit"] {
@@ -95,8 +113,9 @@
 			background-color: $emphasizeBackgroundColorDMW;
 			height: 50px;
 			width: 195px;
-			margin: 80px 0;
+			margin: 43px 0 80px 0;
 			letter-spacing: 1.5px;
+			
 			&:hover{
 				background-color: #54cac8;
 				color: rgb(255, 255, 255);
@@ -106,7 +125,7 @@
 }
 @media #{$tableMode} {
 	.main-appointment {
-		ol {
+		.breadcrumb {
 			padding: 20px 0 0 15px;
 			>li+li:before {
 				font: normal normal normal 16px/1 FontAwesome;
@@ -123,19 +142,86 @@
 			font-size: 25px;
 			letter-spacing: 0.5px;
 		}
-
+		.list {
+			padding-left: 30px;
+			li {
+				font-size: 14px;
+			}
+		}
+		p {
+			margin: 15px 0 0 15px;
+			font-size: 14px;
+		}
+		h3 {
+			margin: 30px 0 0 15px;
+			font-size: 16px;
+		}
+		form {
+			margin-left: 15px;
+			p {
+				margin: 35px 0 20px 0;
+				font-size: 12px;
+			}
+			input {
+				width: 45%;
+			}
+			textarea {
+				margin-top: 5px;
+				height: 70px;
+				width: 100%;
+			}
+			[type="submit"] {
+				font-size: 10px;
+				height: 40px;
+				width: 120px;
+				margin: 30px 0 50px 0;
+			}
+		}
 	}
 }
 @media #{$mobileMode} {
+	.girl-and-mom {
+		p {
+			font-size: 30px;
+			line-height: 0.9;
+		}
+	}
 	.main-appointment {
-		text-align: center;
-		ol {
+		.breadcrumb {
+			text-align: center;
 			padding: 20px 0 0 0;
 		}
 		h1 {
+			text-align: center;
 			margin: 25px 0;
 			font-size: 23px;
 		}
-
+		.list {
+			padding-left: 15px;
+		}
+		p {
+			margin: 15px 0 0 0;
+		}
+		h3 {
+			text-align: center;
+			margin: 30px 0 0 0;
+		}
+		form {
+			margin-left: 0;
+			text-align: center;
+			p {
+				margin: 30px 0 15px 0;
+			}
+			input {
+				width: 100%;
+			}
+			textarea {
+				margin-top: 0;
+				height: 60px;
+			}
+			[type="submit"] {
+				margin: 25px auto 40px auto;
+			}
+		}
 	}
 }
