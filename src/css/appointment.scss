@@ -71,11 +71,12 @@
 	}
 	form {
 		margin-left: 30px;
-		p {
+		label {
 			margin: 48px 0 30px 0;
 			font-size: 14px;
 			color: #000;
 			line-height: 1.714;
+			font-weight: normal;
 		}
 		input {
 			border-top: none;
@@ -158,9 +159,10 @@
 		}
 		form {
 			margin-left: 15px;
-			p {
+			label {
 				margin: 35px 0 20px 0;
 				font-size: 12px;
+				font-weight: normal;
 			}
 			input {
 				width: 45%;
@@ -209,8 +211,9 @@
 		form {
 			margin-left: 0;
 			text-align: center;
-			p {
+			label {
 				margin: 30px 0 15px 0;
+				font-weight: normal;
 			}
 			input {
 				width: 100%;
