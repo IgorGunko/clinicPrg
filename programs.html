@@ -189,7 +189,7 @@
     <div class="baby-and-parents img-programs"></div>
     <div class="container">
         <div class="row">
-            <div class="col-md-5">
+            <div class="col-md-5 col-sm-5 col-xs-12">
                 <ul class="side-nav">
                     <li class="item">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Контролируемое зачатие</span></a>
@@ -304,13 +304,6 @@
                         </ul>
                     </li>
                     <li class="item">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Донорские программы</span></a>
-                        <ul class="item-dropdown">
-                            <li><a href="">#</a></li>
-                            <li><a href="">#</a></li>
-                        </ul>
-                    </li>
-                    <li class="item">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Суррогатное материнство</span></a>
                         <ul class="item-dropdown">
                             <li><a href="">#</a></li>
@@ -319,7 +312,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-md-7 programs-second">
+            <div class="col-md-7 col-sm-7 col-xs-12 programs-second">
                 <ol class="breadcrumb programs-breadcrumb">
                     <li><a href="#">Клиника планирования семьи</a></li>
                     <li><a href="#">Программы</a></li>
@@ -340,7 +333,7 @@
 </section>
 
 
-<div class="sleeping-baby">
+<div class="sleeping-baby price-baby">
     <p class="center-block">
         Программа ICSI с гарантией возврата 100% оплаты лечения
     </p>
@@ -350,7 +343,7 @@
 <section class="footer">
     <div class="container">
         <div class="row">
-            <div class="col-md-7 col-xs-12 footer-menu" >
+            <div class="col-md-7 col-sm-7 col-xs-12 footer-menu" >
                 <ul class="info_clinic">
                     <li>
                         <a href="">О клинике</a>
@@ -388,7 +381,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5 col-sm-5 col-xs-12">
                 <div class="socials">
                     <p>Общаемся в удобных для вас мессенджерах</p>
                     <ul>
@@ -404,23 +397,6 @@
         </div>
     </div>
 </section>
-<script>
-/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-var dropdown = document.getElementsByClassName("dropdown-btn");
-var i;
-
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var dropdownContent = this.nextElementSibling;
-    if (dropdownContent.style.display === "block") {
-      dropdownContent.style.display = "none";
-    } else {
-      dropdownContent.style.display = "block";
-    }
-  });
-}
-</script>
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
 <script src="dist/bundle.js"></script>

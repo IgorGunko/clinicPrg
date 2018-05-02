@@ -24,9 +24,13 @@
             width: 100%;
             height: 58px;
             padding: 17px;
+            padding-right: 45px;
             color: #000;
             background-color: #d1e6e3;
             text-decoration: none;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
 
             &:after {
                 content: "\F105";
@@ -96,7 +100,7 @@
     }
 }
 .programs-second{
-    padding-left: 25px;
+    padding-left: 25px; 
     ol {
         background-color: #fff;
         padding: 40px 0 0 30px;
@@ -132,6 +136,9 @@
     text-decoration: none;
 }
 .programs-second {
+    ol {
+        padding-left: 0;
+    }
     h1 {
     font-size: 30px;
     color: #321c5d;
@@ -154,6 +161,7 @@
     }
     img {
             margin-top: 30px;
+            width: 100%;
         }
 }
 
@@ -162,6 +170,7 @@
     display: inline-block;
     text-align: center;
     line-height: 45px;
+    margin-top: 40px;
 
     a {
         padding: 15px 30px;
