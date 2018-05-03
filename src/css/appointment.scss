@@ -1,0 +1,230 @@
+.girl-and-mom {
+	background-image: url("img/girl_and_mom.png");
+	height: 350px; 
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	p {
+		font-size: 48px;
+		color: #fff;
+		line-height: 0.375;
+		padding-top: 158px;
+		letter-spacing: 2.5px;
+	}
+}
+.main-appointment {
+	.breadcrumb {
+		background-color: #fff;
+		padding: 40px 0 0 30px;
+		margin: 0;
+		>li+li:before {
+			content: "\f105";
+			color: $site-color;
+			font: normal normal normal 20px/1 FontAwesome;
+			padding: 0 9px;
+			vertical-align: middle;
+		}
+		li {
+			font-size: 17px;
+			a {
+				color: #111;
+				text-decoration: underline;
+				&:hover {
+					color: $site-color;
+				}
+			}
+			&:last-child {
+				color: $textColorPrise;
+			}
+		}
+	}
+	h1 {
+		margin: 23px 30px;
+		font-size: 30px;
+		letter-spacing: 0.7px;
+		color: $textColorPrise;
+		line-height: 1.267;
+	}
+	.list {
+		padding-left: 47px;
+		li {
+			font-size: 16px;
+			color: $textColorPrise;
+			line-height: 1.625;
+			letter-spacing: 0.7px;
+		}
+	}
+	p {
+		margin: 23px 0 0 30px;
+		font-size: 16px;
+		color: #000;
+		line-height: 1.5;
+		letter-spacing: 0.50px;
+	}
+	h3 {
+		margin: 50px 0 0 30px;
+		font-size: 19px;
+		color: $textColorPrise;
+		line-height: 1.263;
+		letter-spacing: 0.55px;
+	}
+	form {
+		margin-left: 30px;
+		label {
+			margin: 48px 0 30px 0;
+			font-size: 14px;
+			color: #000;
+			line-height: 1.714;
+			font-weight: normal;
+		}
+		input {
+			border-top: none;
+			border-left: none;
+			border-right: none;
+			display: block;
+			width: 35%;
+
+			&:focus {
+				outline: none;
+				border-bottom: 1px solid #54cac8;
+			}
+		}
+		textarea {
+			margin-top: 10px;
+			border-left: none;
+			border-right: none;
+			height: 90px;
+			width: 98%;
+			border-bottom: 1px solid #dbdbdb;
+			border-top: 1px solid #dbdbdb;
+			padding: 15px;
+
+			&:focus {
+				outline: none;
+				border-bottom: 1px solid #54cac8;
+				border-top: 1px solid #54cac8;
+			}
+		}
+		[type="submit"] {
+			border: none;
+			font-size: 12px;
+			font-family: "Myriad_Pro";
+			color: $site-color;
+			background-color: $emphasizeBackgroundColorDMW;
+			height: 50px;
+			width: 195px;
+			margin: 43px 0 80px 0;
+			letter-spacing: 1.5px;
+			
+			&:hover{
+				background-color: #54cac8;
+				color: rgb(255, 255, 255);
+			}
+		}
+	}
+}
+@media #{$tableMode} {
+	.main-appointment {
+		.breadcrumb {
+			padding: 20px 0 0 15px;
+			>li+li:before {
+				font: normal normal normal 16px/1 FontAwesome;
+				padding: 0 7px;
+				position: relative;
+				bottom: 1px;
+			}
+			li {
+				font-size: 14px;
+			}
+		}
+		h1 {
+			margin: 25px 15px;
+			font-size: 25px;
+			letter-spacing: 0.5px;
+		}
+		.list {
+			padding-left: 30px;
+			li {
+				font-size: 14px;
+			}
+		}
+		p {
+			margin: 15px 0 0 15px;
+			font-size: 14px;
+		}
+		h3 {
+			margin: 30px 0 0 15px;
+			font-size: 16px;
+		}
+		form {
+			margin-left: 15px;
+			label {
+				margin: 35px 0 20px 0;
+				font-size: 12px;
+				font-weight: normal;
+			}
+			input {
+				width: 45%;
+			}
+			textarea {
+				margin-top: 5px;
+				height: 70px;
+				width: 100%;
+			}
+			[type="submit"] {
+				font-size: 10px;
+				height: 40px;
+				width: 120px;
+				margin: 30px 0 50px 0;
+			}
+		}
+	}
+}
+@media #{$mobileMode} {
+	.girl-and-mom {
+		p {
+			font-size: 30px;
+			line-height: 0.9;
+		}
+	}
+	.main-appointment {
+		.breadcrumb {
+			text-align: center;
+			padding: 20px 0 0 0;
+		}
+		h1 {
+			text-align: center;
+			margin: 25px 0;
+			font-size: 23px;
+		}
+		.list {
+			padding-left: 15px;
+		}
+		p {
+			margin: 15px 0 0 0;
+		}
+		h3 {
+			text-align: center;
+			margin: 30px 0 0 0;
+		}
+		form {
+			margin-left: 0;
+			text-align: center;
+			label {
+				margin: 30px 0 15px 0;
+				font-weight: normal;
+			}
+			input {
+				width: 100%;
+			}
+			textarea {
+				margin-top: 0;
+				height: 60px;
+			}
+			[type="submit"] {
+				margin: 25px auto 40px auto;
+			}
+		}
+	}
+}

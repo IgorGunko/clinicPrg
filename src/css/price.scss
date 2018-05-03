@@ -1,0 +1,165 @@
+.baby-and-parents {
+	background-image: url("img/baby_and_parents.png");
+	height: 340px; 
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.main-price {
+	ol {
+		background-color: #fff;
+		padding: 40px 0 0 30px;
+		margin: 0;
+		>li+li:before {
+			content: "\f105";
+			color: $site-color;
+			font: normal normal normal 20px/1 FontAwesome;
+			padding: 0 9px;
+			vertical-align: middle;
+		}
+		li {
+			font-size: 17px;
+			a {
+				color: #111;
+				text-decoration: underline;
+				&:hover {
+					color: $site-color;
+				}
+			}
+			&:last-child {
+				color: $textColorPrise;
+			}
+		}
+	}
+	h1 {
+		margin: 23px 30px;
+		font-size: 30px;
+		letter-spacing: 0.7px;
+		color: $textColorPrise;
+		line-height: 1.267;
+	}
+	.table {
+		background-color: #f1f1f1;
+		margin: 40px 30px;
+		max-width: 720px;
+		height: 110px;
+		td {
+			vertical-align: middle;
+			font-size: 17px;
+		}
+		.download {
+			a {
+				color: $textColorPrise;
+				text-decoration: none;
+				margin: 0 55px;
+				&:hover {
+					color: $site-color;
+				}
+				span {
+					&:before {
+						content: "\f1c1";
+						padding-right: 15px;
+						font: normal normal normal 27px/1 FontAwesome;
+					}
+				}
+			}
+		}
+	}
+	p {
+		margin-left: 30px;
+		font-size: 17px;
+		line-height: 110%;
+		a {
+			color: $site-color;
+			/*text-decoration: none;*/
+		}
+	}
+	.icon-pay {
+		margin: 67px 50px;
+		p {
+			margin:0 0 20px 0;
+			font-size: 14px;
+			letter-spacing: 0.3px;
+		}
+		img {
+			padding-right: 3px;
+		}
+	}
+}
+@media #{$tableMode} {
+	.main-price {
+		ol {
+			padding: 20px 0 0 15px;
+			>li+li:before {
+				font: normal normal normal 16px/1 FontAwesome;
+				padding: 0 7px;
+				position: relative;
+				bottom: 1px;
+			}
+			li {
+				font-size: 14px;
+			}
+		}
+		h1 {
+			margin: 25px 15px;
+			font-size: 25px;
+			letter-spacing: 0.5px;
+		}
+		.table {
+			margin: 30px 15px;
+			width: auto;
+			height: auto;
+			td {
+				font-size: 15px;
+			}
+			.download {
+				a {
+					margin: 0 25px;
+					span {
+						&:before {
+							padding-right: 10px;
+							font: normal normal normal 20px/1 FontAwesome;
+						}
+					}
+				}
+			}
+		}
+		p {
+			margin-left: 15px;
+			font-size: 15px;
+		}
+		.icon-pay {
+			margin: 34px 25px;
+			p {
+				margin:0 0 10px 0;
+				font-size: 12px;
+			}
+		}
+	}
+}
+@media #{$mobileMode} {
+	.main-price {
+		text-align: center;
+		ol {
+			padding: 20px 0 0 0;
+		}
+		h1 {
+			margin: 25px 0;
+			font-size: 23px;
+		}
+		.table {
+			margin: 30px auto;
+			.download {
+				a {
+					margin: 0;
+				}
+			}
+		}
+		p {
+			margin-left: 0;
+		}
+		.icon-pay {
+			margin: 34px 0;
+		}
+	}
+}

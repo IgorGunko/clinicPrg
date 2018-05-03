@@ -1,0 +1,24 @@
+@media #{$mobileMode} {
+
+	.block-video {
+	   margin-bottom: 20px;
+	   padding-left: 15px;
+
+		h1 {
+			font-size: 21px;
+		}
+	}
+
+	.about-video {
+
+		hr {
+			margin-top: 25px;
+		}
+		
+	}
+
+	.like-blank {
+		font-size: 16px;
+	}
+	
+}

@@ -1,0 +1,39 @@
+@media #{$tableMode} {
+
+	.side-nav {
+		padding-left: 0;
+		font-size: 14px;
+	}
+	.programs-second {
+		padding-left: 0;
+	}
+
+}
+
+
+
+@media #{$mobileMode} {
+
+	.side-nav {
+		padding-left: 0;
+		margin-bottom: 20px;
+		font-size: 14px;
+	}
+	.programs-second {
+		padding-left: 15px;
+	}
+	.button-appointment a {
+	    font-size: 13px;
+	    width: 100%;
+
+	    &:last-child {
+		    margin-left: 0;
+		}
+	}
+
+}
+
+
+
+
+    

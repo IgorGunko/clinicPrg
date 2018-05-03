@@ -1,0 +1,37 @@
+
+@media #{$tableMode} {
+
+	.block-questions {
+	    padding-left: 15px;
+
+	}
+
+}
+
+@media #{$mobileMode} {
+
+	.panel-group {
+		margin-bottom: 60px;
+		
+	}
+	.block-questions {
+	    padding-left: 15px;
+
+	    h1 {
+	    	font-size: 26px;
+	    }
+	}
+	.panel-title {
+
+		a {
+			font-size: 18px;
+		}
+	}
+	
+	.baby-and-parents p {
+	    padding-top: 95px;
+	    color: #fff;
+	    font-size: 37px;
+	}
+}
+
