@@ -1,23 +1,102 @@
-.contact-form {
+.konsult-section {
+	width: 100%;
+	background-image: url(img/konsult-bg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.underline {
+	text-decoration: underline;
+}
+
+.konsult-outer-form {
+	margin: 45px 0;
+	padding: 35px;
+	background-color: #fff;
+
+	h1 {
+		color: $textColorPrise;
+		font-size: 25px;
+		text-align: center;
+	}
+	p {
+		font-size: 14px;
+		text-align: center;
+	    font-family: "Open_Sans";
+	}
+}
+
+.konsult-form {
+	width: 260px;
+	margin: 0 auto;
+
+	label {
+		display: inline-block;
+		margin: 48px 0 30px 0;
+		font-size: 14px;
+		color: #000;
+		vertical-align: middle;
+		font-weight: normal;
+	}
+
+	input {
+		border-top: none;
+		border-left: none;
+		border-right: none;
+		display: block;
+		width: 100%;
+		text-align: center;
+		padding-bottom: 10px;
+
+		&:focus {
+			outline: none;
+			border-bottom: 2px solid #e1e6ec;
+		}
+	}
+
+	[type="submit"] {
+		border: none;
+		font-size: 12px;
+		font-family: "Myriad_Pro";
+		color: #fff;
+		background-color: #60b8b7;
+		height: 50px;
+		width: 195px;
+		margin: 40px 0 40px 0;
+		letter-spacing: 1.5px;
+		border-radius: 0;
+		
+		&:hover{
+			background-color: #54cac8;
+	
+		}
+	}
 
 	.form-group{
 		margin-bottom: 0;
 		position: relative;
-	}
-
-	input {
-		margin-bottom: 20px;
-		background: #ececec;
-		padding-left: 30px;
-
-		&:focus {
-			border: 1px solid #999;
-			outline: none !important;
+		text-align: center;
+	
+		i {
+			padding-right: 10px;
+			color: #eee;
+			display: inline-block;
+			vertical-align: middle;
 		}
-	}
-
-	input[type="submit"]{
-		background: #5cb85c;
+		.fa-user-o {
+			font-size: 23px;
+			padding-right: 10px;
+			color: #eee;
+		}
+		.fa-phone {
+			font-size: 23px;
+			padding-right: 10px;
+			color: #eee;
+		}
+		.fa-calendar{
+			font-size: 23px;
+			padding-right: 10px;
+			color: #eee;
+		}
 	}
 
 	.checkbox-label {
@@ -26,11 +105,13 @@
 	    padding-left: 35px;
 	    margin-bottom: 12px;
 	    cursor: pointer;
-	    font-size: 22px;
+	    font-size: 13px;
 	    -webkit-user-select: none;
 	    -moz-user-select: none;
 	    -ms-user-select: none;
 	    user-select: none;
+	    text-align: left;
+	    line-height: 1.2;
 
 	    input {
 		    position: absolute;
@@ -41,15 +122,17 @@
 
 	.checkmark {
 	    position: absolute;
-	    top: 0;
+	    top: 6px;
 	    left: 0;
-	    height: 25px;
-	    width: 25px;
-	    background-color: #eee;
+	    height: 20px;
+	    width: 20px;
+	    background-color: #fff;
+	    border: 2px solid #edf1f5;
 	}
 
 	.checkbox-label input:checked ~ .checkmark {
-	    background-color: #2196F3;
+	    background-color: #fff;
+        border: 2px solid #edf1f5;
 	}
 
 	.checkmark:after {
@@ -64,15 +147,54 @@
 	}
 
 	.checkbox-label .checkmark:after {
-	    left: 9px;
-	    top: 5px;
+	    left: 7px;
+	    top: 2px;
 	    width: 5px;
 	    height: 10px;
-	    border: solid white;
+	    border: solid #60b8b7;
 	    border-width: 0 3px 3px 0;
 	    -webkit-transform: rotate(45deg);
 	    -ms-transform: rotate(45deg);
 	    transform: rotate(45deg);
 	}
+
+
+	.select-time {
+		width: 100%;
+		color: #d8d9d9;
+		padding-bottom: 15px;
+        padding-left: 100px;
+		font-size: 16px;
+		border: none;
+		border-bottom: 2px solid #e1e6ec;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+
+		&:focus {
+			outline: none;
+		}
+	}
+	.form-control-feedback {
+	    position: absolute;
+	    font-size: 13px;
+	    top: 84px;
+        right: 70px;
+	    z-index: 2;
+	    display: block;
+	    color: #000;
+	    width: 34px;
+	    height: 50px;
+	    line-height: 50px;
+	    text-align: center;
+	    pointer-events: none;
+
+	    i {
+	    	padding-right: 10px;
+		    color: #131010;
+		    display: inline-block;
+		    vertical-align: middle;
+	    }
+	}
+
 
 }
