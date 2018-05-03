@@ -185,58 +185,46 @@
 </header>
 
 
-<section>
-<div class="container">
-    <div class="row">
-        <div class="col-sm-4 col-sm-offset-4">
-            <form class="contact-form">
-                <div class="form-group">
-                    <label for="username"><i class="fa fa-user"></i>Your Username</label>
-                    <input type="text" name="username" id="username" class="username form-control" placeholder="Your Username" value="">
+<section class="konsult-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5 col-sm-offset-5">
+                <div class="konsult-outer-form">
+                    <h1>Бесплатная консультация</h1>
+                    <p>Оставьте свое имя, номер телефона, желаемое время и мы свяжемся с вами.</p>
+                    <form class="konsult-form">
+                        <div class="form-group">
+                            <label for="firstname"><i class="fa fa-user-o" aria-hidden="true"></i>Как вас зовут:</label>
+                            <input type="text" name="firstname" id="firstname" placeholder="-------------" value="">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone"><i class="fa fa-phone" aria-hidden="true"></i>Ваш номер телефона:</label>
+                            <input type="text" name="phone" id="phone" placeholder="-------------" value="">
+                        </div>
+                        <div class="form-group">
+                            <label for="calendar"><i class="fa fa-calendar" aria-hidden="true"></i>Желаемое время приема:</label>
+                            <select required="" class="select-time" name="mailto" id="calendar">
+                              <option value="11111111">13.00</option>
+                              <option value="2222222222">16.00</option>
+                              <option value="23333333333">17.00</option>
+                            </select>
+                            <span class="form-control-feedback"><i class="fa fa-sort-down" aria-hidden="true"></i></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="ЗАПИСАТЬСЯ" class="btn btn-success btn-block">
+                        </div>
+                        <div class="form-group">
+                            <label class="checkbox-label">Вы соглашаетесь <span class="underline">с условиями </span> обработки персональных данных
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </form>
                 </div>
-
-                    
-                    <div class="form-group">
-                    <input type="text" name="phone" class=" phone form-control" placeholder="-------------" value="">
-                    <i class="fa fa-phone"></i>
-                    </div>
-
-                    <div class="form-group">
-                        <select required="" class="select-time" name="mailto" id="select-address">
-                          <option value="11111111">13.00</option>
-                          <option value="2222222222">16.00</option>
-                          <option value="23333333333">17.00</option>
-                        </select><span class="form-control-feedback"><i class="fa fa-sort-down" aria-hidden="true"></i></span>
-                    </div>
-
-                    <div class="form-group">
-                        <input type="submit" value="send" class="btn btn-success btn-block">
-                        <i class="fa fa-paper-plane send-icon"></i>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="checkbox-label">One
-                          <input type="checkbox" checked="checked">
-                          <span class="checkmark"></span>
-                        </label>
-                    </div>
-
-            </form>
+            </div>
         </div>
     </div>
-</div>
-
-
 </section>
-
-
-<div class="sleeping-baby">
-    <p class="center-block">
-        Программа ICSI с гарантией возврата 100% оплаты лечения
-    </p>
-    <a href="" class="center-block">УЗНАТЬ ПОДРОБНЕЕ</a>
-</div>
-
 <section class="footer">
     <div class="container">
         <div class="row">
