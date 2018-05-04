@@ -7,6 +7,24 @@
 	.programs-second {
 		padding-left: 0;
 	}
+	.button-appointment {
+    
+    display: inline-block;
+    text-align: center;
+    line-height: 45px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+	    a {
+	        padding: 10px 10px;
+
+	        &:last-child {
+
+	            margin-left: 0;
+        	}
+	    } 
+	}
+
 
 }
 
