@@ -8,7 +8,7 @@
 .main-eco {
 	ol {
 		background-color: #fff;
-		padding: 40px 0 0 30px;
+		padding: 40px 0 0 10px;
 		margin: 0;
 		>li+li:before {
 			content: "\f105";
@@ -32,7 +32,7 @@
 		}
 	}
 	h1 {
-		margin: 35px 30px;
+		margin: 35px 10px;
 		font-size: 30px;
 		letter-spacing: 0.7px;
 		color: $textColorPrise;
@@ -42,7 +42,7 @@
 		background-image: url("img/pregnant_woman.png");
 		height: 191px;
 		max-width: 720px;
-		margin:0 0 35px 30px;
+		margin:0 0 35px 10px;
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -76,7 +76,7 @@
 		}
 	}
 	.table {
-		margin: 0 0 130px 30px;
+		margin: 0 0 130px 10px;
 		max-width: 96%;
 		th {
 			height: 74px;
