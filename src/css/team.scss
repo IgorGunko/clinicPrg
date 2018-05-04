@@ -8,7 +8,7 @@
 .main-team {
 	ol {
 		background-color: #fff;
-		padding: 40px 0 0 30px;
+		padding: 40px 0 0 10px;
 		margin: 0;
 		>li+li:before {
 			content: "\f105";
@@ -32,27 +32,31 @@
 		}
 	}
 	h1 {
-		margin: 35px 30px;
+		margin: 35px 10px;
 		font-size: 30px;
 		letter-spacing: 0.7px;
 		color: $textColorPrise;
 		line-height: 1.267;
 	}
 	.gallery {
-		margin: 0 0 50px 30px ;
+		margin: 0 0 50px 10px;
+
 		.gallery-description {
 			max-width: 304px;
+
 			p {
 			font-size: 14px;
 			line-height: 1.857;
 			letter-spacing: 0.35px;
 			margin: 0;
+
 				&:first-child {
 					font-size: 20px;
 					line-height: 1.9;
 					margin: 22px 0 0 0;
 					letter-spacing: 1px;
 				}
+
 				&:last-child {
 					color: $textColorPrise;
 					margin: 16px 0 44px 0;
