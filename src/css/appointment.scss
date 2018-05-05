@@ -16,7 +16,7 @@
 .main-appointment {
 	.breadcrumb {
 		background-color: #fff;
-		padding: 40px 0 0 30px;
+		padding: 40px 0 0 10px;
 		margin: 0;
 		>li+li:before {
 			content: "\f105";
@@ -40,14 +40,14 @@
 		}
 	}
 	h1 {
-		margin: 23px 30px;
+		margin: 23px 10px;
 		font-size: 30px;
 		letter-spacing: 0.7px;
 		color: $textColorPrise;
 		line-height: 1.267;
 	}
 	.list {
-		padding-left: 47px;
+		padding-left: 30px;
 		li {
 			font-size: 16px;
 			color: $textColorPrise;
@@ -56,21 +56,21 @@
 		}
 	}
 	p {
-		margin: 23px 0 0 30px;
+		margin: 23px 0 0 10px;
 		font-size: 16px;
 		color: #000;
 		line-height: 1.5;
 		letter-spacing: 0.50px;
 	}
 	h3 {
-		margin: 50px 0 0 30px;
+		margin: 50px 0 0 10px;
 		font-size: 19px;
 		color: $textColorPrise;
 		line-height: 1.263;
 		letter-spacing: 0.55px;
 	}
 	form {
-		margin-left: 30px;
+		margin-left: 10px;
 		label {
 			margin: 48px 0 30px 0;
 			font-size: 14px;
