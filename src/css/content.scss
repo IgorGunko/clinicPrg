@@ -37,6 +37,18 @@
 		.description-wrapper_borer_right {
 			border-right: none;
 		}
+		.description-wrapper {
+			p {
+				&:first-child {
+					color: $site-color;
+				}
+			}
+		}
+		.manipulation__heading {
+			p {
+				color: $site-color;
+			}
+		}
 	}
 }
 .description-wrapper {
@@ -56,9 +68,6 @@
 			font-size: 20px;
 			width: 65%;
 			margin: 5px auto;
-			&:hover {
-				color: $site-color;
-			}
 		}
 	}
 }
@@ -88,10 +97,7 @@
 		width: 100%;
 		font-size: 20px;
 		margin: 2px 0 0 10px;
-		/*height: 80px;*/
-		&:hover {
-			color: $site-color;
-		}
+		height: 80px;
 	}
 }
 

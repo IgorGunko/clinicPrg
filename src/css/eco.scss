@@ -10,6 +10,10 @@
 		background-color: #fff;
 		padding: 40px 0 0 10px;
 		margin: 0;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		
 		>li+li:before {
 			content: "\f105";
 			color: $site-color;
