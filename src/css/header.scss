@@ -2,9 +2,36 @@
 	font-family: Myriad_Pro;
 	src: url(fonts/Myriad_Pro/Myriad_Pro_Regular.ttf);
 }
-@font-face {
+/*@font-face {
 	font-family: Open_Sans;
 	src: url(fonts/Open_Sans/Open_Sans_Regular.ttf);
+}*/
+
+@font-face {
+    font-family: 'Open_Sans';
+    src: url(fonts/Open_Sans/OpenSans-Regular.eot#) format('eot'),
+         url(fonts/Open_Sans/OpenSans-Regular.woff) format('woff'),
+         url(fonts/Open_Sans/OpenSans-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans Semibold';
+    src: url(fonts/Open_Sans/OpenSans-Semibold.eot#) format('eot'),
+         url(fonts/Open_Sans/OpenSans-Semibold.woff) format('woff'),
+         url(fonts/Open_Sans/OpenSans-Semibold.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans Bold';
+    src: url(fonts/Open_Sans/OpenSans-Bold.eot#) format('eot'),
+         url(fonts/Open_Sans/OpenSans-Bold.woff) format('woff'),
+         url(fonts/Open_Sans/OpenSans-Bold.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
 }
 
 body{
