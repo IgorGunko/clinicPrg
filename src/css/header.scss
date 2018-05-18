@@ -42,11 +42,11 @@ body{
 	background-color: #f1f1f1;
 }
 .contact-left{
-	padding-top: 10px;
+	padding-top: 5px;
 	float: left;
 	div{
 		display: inline-block;
-		vertical-align: top;
+		vertical-align: middle;
 	}
 }
 .contact-right{
@@ -62,11 +62,13 @@ body{
 		height: 30px;
 		position: absolute;
 		background-color: $site-color;
-		top: -5px;
+		top: 0px;
 		right: 20px;
 	}
 	ul{
 		padding: 0;
+		margin: 0;
+
 		li{
 			list-style: none;
 			position: relative;
@@ -137,7 +139,7 @@ body{
 					height: 25px;
 					margin-right: 5px;
 					display: inline-block;
-					border: 1px solid $site-color;
+					//border: 1px solid $site-color;
 					border-radius: 100%;
 					text-align: center;
 					font-size: 16px;
@@ -147,7 +149,21 @@ body{
 				}
 			}
 			.time{
-				&:before {
+				i{
+					display: inline-block;
+					vertical-align: middle;
+					background-repeat: none;
+					width: 25px;
+					height: 25px;
+					background-size: contain;
+					background-repeat: no-repeat;
+					background-image: url('img/arrow-bottom.png');
+
+					&:hover {
+						background-image: url('img/arrow-bottom.png');
+					}
+				}
+				/*&:before {
 					content: "\f107";
 					font: normal normal normal 14px/1 FontAwesome;
 					color: $site-color;
@@ -167,7 +183,7 @@ body{
 					&:before{
 						content: "\f106";
 					}
-				}
+				}*/
 			}
 			a{
 				text-decoration: none;
@@ -243,10 +259,15 @@ ul.time-dropdown {
 		}
 	}
 	.title{
+		height: 30px;
 		color: #333;
 		margin-bottom: 13px;
 		font-size: 12px;
 		font-family: "Open Sans Semibold";
+
+		a {
+			color: $site-color;
+		}
 	}
 	.roll{
 		li{
@@ -423,10 +444,10 @@ ul.time-dropdown {
 }
 .navbar-brand {
 	opacity: 0;
-	width: 44px;
-	height: 60px;
+	width: 39px;
+	height: 52px;
 	position: absolute;
-	top: -2px;
+	top: 3px;
 	left: -9px;
 	background-size: cover;
 	background-image: url('img/logo.png');
@@ -448,4 +469,28 @@ ul.time-dropdown {
 	opacity: 1;
 }
 
+.sprite-icon {
+	display: inline-block;
+	vertical-align: middle;
+	background-repeat: none;
+	width: 28px;
+	height: 28px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.icon-arrow-top {
+	background-image: url('img/arrow-top.png');
+}
+.icon-arrow-right {
+	background-image: url('img/arrow-right.png');
+}
+.icon-arrow-bottom {
+	background-image: url('img/arrow-bottom.png');
+}
+.icon-lang {
+	background-image: url('img/arrow-lang.png');
+}
+.icon-phone {
+	background-image: url('img/arrow-phone.png');
+}
 
