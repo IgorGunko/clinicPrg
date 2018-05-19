@@ -309,6 +309,7 @@ ul.time-dropdown {
 .baby-count{
 	display: inline-block;
 	text-align: center;
+	position: relative;
 	width: 95px;
 	height: 95px;
 	padding-top: 32px;
@@ -319,7 +320,6 @@ ul.time-dropdown {
 	font-family: "Open Sans Semibold";
 
 	span{
-		color: #fff;
 		font-size: 17px;
 		&:last-child{
 			font-size: 12px;
@@ -494,3 +494,39 @@ ul.time-dropdown {
 	background-image: url('img/arrow-phone.png');
 }
 
+.animation1 {
+	animation-name: animation1;
+	animation-duration: 3s;
+	animation-timing-function: ease-in-out;
+	position: absolute;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+.animation2 {
+	animation-name: animation2;
+	animation-duration: 3s;
+	animation-timing-function: ease-in-out;
+	position: absolute;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+@keyframes animation1 {
+	0% {
+	color: #fff;
+	opacity: 1;
+	}
+	100% {
+		color: $site-color;;
+		opacity: 0;
+	}
+}
+@keyframes animation2 {
+	0% {
+		color: $site-color;;
+		opacity: 0;
+	}
+	100% {
+			color: #fff;
+			opacity: 1;
+		}
+}
