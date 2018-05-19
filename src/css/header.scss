@@ -42,11 +42,11 @@ body{
 	background-color: #f1f1f1;
 }
 .contact-left{
-	padding-top: 10px;
+	padding-top: 5px;
 	float: left;
 	div{
 		display: inline-block;
-		vertical-align: top;
+		vertical-align: middle;
 	}
 }
 .contact-right{
@@ -62,11 +62,13 @@ body{
 		height: 30px;
 		position: absolute;
 		background-color: $site-color;
-		top: -5px;
+		top: 0px;
 		right: 20px;
 	}
 	ul{
 		padding: 0;
+		margin: 0;
+
 		li{
 			list-style: none;
 			position: relative;
@@ -75,6 +77,7 @@ body{
 				text-decoration: none;
 				border-radius: 100%;
 				padding: 5px 6px;
+				font-family: "Open Sans Semibold";
 			}
 			.active-lang{
 				border: 1px solid $site-color;
@@ -113,7 +116,7 @@ body{
 	span{
 		font-size: 12px;
 		color: rgb(51, 51, 51);
-		font-weight: bold;
+		font-family: "Open Sans Semibold";
 	}
 }
 .contact-right {
@@ -128,14 +131,15 @@ body{
 			span{
 				color: rgb(51, 51, 51);
 				font-size: 12px;
-				font-weight:bold;
+				font-family: "Open Sans Semibold";
+
 				i{
 					color: $site-color;
 					width: 25px;
 					height: 25px;
 					margin-right: 5px;
 					display: inline-block;
-					border: 1px solid $site-color;
+					//border: 1px solid $site-color;
 					border-radius: 100%;
 					text-align: center;
 					font-size: 16px;
@@ -145,7 +149,21 @@ body{
 				}
 			}
 			.time{
-				&:before {
+				i{
+					display: inline-block;
+					vertical-align: middle;
+					background-repeat: none;
+					width: 25px;
+					height: 25px;
+					background-size: contain;
+					background-repeat: no-repeat;
+					background-image: url('img/arrow-bottom.png');
+
+					&:hover {
+						background-image: url('img/arrow-bottom.png');
+					}
+				}
+				/*&:before {
 					content: "\f107";
 					font: normal normal normal 14px/1 FontAwesome;
 					color: $site-color;
@@ -165,7 +183,7 @@ body{
 					&:before{
 						content: "\f106";
 					}
-				}
+				}*/
 			}
 			a{
 				text-decoration: none;
@@ -176,6 +194,14 @@ body{
 				max-height: 160px;
 			}
 		}
+		.recording-btn {
+			a {
+				color: $site-color;
+				font-size: 12px;
+				font-family: "Open Sans Semibold";
+				text-transform: uppercase;
+			}
+		}
 		.contact-btn{
 			background-color: $site-color;
 			height: 40px;
@@ -183,7 +209,8 @@ body{
 			text-align: center;
 			width: 225px;
 			font-size: 12px;
-			font-weight: bold;
+			font-family: "Open Sans Semibold";
+
 			&:hover{
 				background-color: #3bb5b4;
 			}
@@ -232,10 +259,15 @@ ul.time-dropdown {
 		}
 	}
 	.title{
+		height: 30px;
 		color: #333;
 		margin-bottom: 13px;
 		font-size: 12px;
-		font-weight: 400;
+		font-family: "Open Sans Semibold";
+
+		a {
+			color: $site-color;
+		}
 	}
 	.roll{
 		li{
@@ -285,6 +317,8 @@ ul.time-dropdown {
 	border-radius: 100%;
 	line-height: 15px;
 	position: relative;
+
+	font-family: "Open Sans Semibold";
 	span{
 		font-size: 17px;
 		&:last-child{
@@ -344,7 +378,7 @@ ul.time-dropdown {
 .navbar-nav li {
 	float: none;
 	display: inline-block;
-	margin: 0 6px;
+	margin: 0 4px;
 }
 .nav{
 	font-size: 0;
@@ -353,6 +387,8 @@ ul.time-dropdown {
 			font-size: 18px;
 			color: rgb(50, 28, 93);
 			border-top: 3px solid transparent;
+			font-family: "Open Sans Semibold";
+
 			&:hover{
 				background-color: transparent;
 				border-top: 3px solid $site-color;
@@ -410,6 +446,8 @@ ul.time-dropdown {
 				color: rgb(51, 51, 51);
 				border: none!important;
 				text-decoration: none;
+				font-family: "Open Sans Semibold";
+
 				&:before {
 					content: "\f105";
 					font: normal normal normal 14px/1 FontAwesome;
@@ -442,11 +480,11 @@ ul.time-dropdown {
 }
 .navbar-brand {
 	opacity: 0;
-	width: 44px;
-	height: 60px;
+	width: 39px;
+	height: 52px;
 	position: absolute;
-	top: -2px;
-	left: 5px;
+	top: 3px;
+	left: -9px;
 	background-size: cover;
 	background-image: url('img/logo.png');
 	transition: opacity 1s;
@@ -467,4 +505,28 @@ ul.time-dropdown {
 	opacity: 1;
 }
 
+.sprite-icon {
+	display: inline-block;
+	vertical-align: middle;
+	background-repeat: none;
+	width: 28px;
+	height: 28px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.icon-arrow-top {
+	background-image: url('img/arrow-top.png');
+}
+.icon-arrow-right {
+	background-image: url('img/arrow-right.png');
+}
+.icon-arrow-bottom {
+	background-image: url('img/arrow-bottom.png');
+}
+.icon-lang {
+	background-image: url('img/arrow-lang.png');
+}
+.icon-phone {
+	background-image: url('img/arrow-phone.png');
+}
 

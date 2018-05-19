@@ -53,6 +53,7 @@
     line-height: 45px;
     text-align: center;
     text-decoration: none;
+    font-family: "Open Sans Semibold";
   }
 }
 
@@ -67,7 +68,7 @@
 
 .slick-dots {
   position: absolute;
-  bottom: -25px;
+  bottom: -38px;
   list-style: none;
   display: block;
   text-align: center;
@@ -77,8 +78,8 @@
   li {
     position: relative;
     display: inline-block;
-    height: 20px;
-    width: 20px;
+    height: 0px;
+    width: 10px;
     margin: 0 5px;
     padding: 0;
     cursor: pointer;
@@ -105,12 +106,13 @@
         top: 0;
         left: 0;
         content: $slick-dot-character;
-        width: 20px;
-        height: 20px;
-        font-size: 20px;
+        width: 6px;
+        height: 6px;
+        font-size: 0px;
+        border-radius: 100%;
         line-height: 20px;
         text-align: center;
-        color: $slick-dot-color;
+        background-color: $slick-dot-color;
         opacity: $slick-opacity-not-active;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
