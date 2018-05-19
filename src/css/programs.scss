@@ -160,8 +160,10 @@
         &:first-child {
             margin-top:35px;
         }
-        span {
+        a {
             color: #321c5d;
+            text-decoration: none;
+            display: inline;
             border-bottom: 1px solid #321c5d;
         }
         
