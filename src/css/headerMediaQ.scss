@@ -12,7 +12,7 @@
 		text-align: center;
 	}
 	.navbar-brand {
-		width: 200px;
+		width: 280px;
 		height: 58px;
 		top: -5px;
 		left: -5px;
@@ -80,6 +80,14 @@
 }
 
 @media #{$tableModeIpad} {
+	.contact-left{
+		float: none;
+	}
+	.contact-right{
+		float: none;
+		display: inline-block;
+		vertical-align: middle;
+	}
 	.lang-menu{
 		padding-right: 5px;
 		&:after{
@@ -87,7 +95,7 @@
 		}
 	}
 	.contact-left .contact-address{
-		width: 145px;
+		//width: 145px;
         margin-top: -10px;
 	}
 	.table-offset{
@@ -102,6 +110,11 @@
 	}
 	.navbar-brand {
 		left: -9px;
+		top: 2px;
+		width: 240px;
+		height: 50px;
+		background-size: 100% auto;
+		background-repeat: no-repeat;
 	}
 }
 
@@ -151,5 +164,14 @@
 			width: 50%;
 		}	
 	}
+	.navbar-brand {
+		left: -9px;
+		top: 2px;
+		width: 240px;
+		height: 50px;
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+	}
+
 
 }
