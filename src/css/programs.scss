@@ -31,6 +31,11 @@
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
+            -webkit-transition: background-color 1s ease-in-out;
+            -moz-transition: background-color 1s ease-in-out;
+            -ms-transition: background-color 1s ease-in-out;
+            -o-transition: background-color 1s ease-in-out;
+            transition: background-color 1s ease-in-out;
 
             &:after {
                 content: "";
@@ -69,7 +74,6 @@
     }
 
     .item-dropdown {
-        opacity: 0;
         background-color: #60b8b7;
         padding-left: 35px;
         -webkit-transition: max-height 1s ease-in-out;
@@ -83,7 +87,7 @@
         li {
             list-style: none;
             padding: 15px;
-            display: none;
+            /*display: none;*/
 
             &:last-child {
                 padding-bottom: 30px;
@@ -102,14 +106,13 @@
 
     .open {
          .item-dropdown {
-            opacity: 1;
-            //-webkit-transition: all 1s ease-in-out;
-            //-moz-transition: all 1s ease-in-out;
-            //-o-transition: all 1s ease-in-out;
-            //transition: all 1s ease-in-out;
-             max-height: 300px;
+            -webkit-transition: all 1s ease-in-out;
+            -moz-transition: all 1s ease-in-out;
+            -o-transition: all 1s ease-in-out;
+            transition: all 1s ease-in-out;
+            max-height: 300px;
             li {
-                display: block;
+                /*display: block;*/
             }
         }
     }
