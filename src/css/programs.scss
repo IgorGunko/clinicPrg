@@ -64,18 +64,23 @@
                 content: "\F107";
                 color: #fff;
                 border-color: #fff;
+                -webkit-transition: all 1s ease-in-out;
+                -moz-transition: all 1s ease-in-out;
+                -o-transition: all 1s ease-in-out;
+                transition: all 1s ease-in-out;
             }
         }
     }
 
     .item-dropdown {
-        display: none;
+        opacity: 0;
         background-color: #60b8b7;
         padding-left: 35px;
 
         li {
             list-style: none;
             padding: 15px;
+            display: none;
 
             &:last-child {
                 padding-bottom: 30px;
@@ -94,11 +99,14 @@
 
     .open {
          .item-dropdown {
-            display: block;
-            -webkit-transition: all 0.5s ease-in-out;
-            -moz-transition: all 0.5s ease-in-out;
-            -o-transition: all 0.5s ease-in-out;
-            transition: all 0.5s ease-in-out;
+            opacity: 1;
+            -webkit-transition: all 1s ease-in-out;
+            -moz-transition: all 1s ease-in-out;
+            -o-transition: all 1s ease-in-out;
+            transition: all 1s ease-in-out;
+            li {
+                display: block;
+            }
         }
     }
 }
