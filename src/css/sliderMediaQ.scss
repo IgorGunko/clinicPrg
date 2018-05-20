@@ -5,12 +5,14 @@
 @media #{$mobileMode} {
   .swiper-slides {
     .slide-title{
-      margin-top: 50px;
+      margin-top: 35px;
       font-size: 30px;
       line-height: 35px;
     }
     .slide-description{
-
+        display: inline-block;
+        max-height: 130px;
+        overflow: hidden;
     }
     a{
       width: 100%;

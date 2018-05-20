@@ -54,6 +54,10 @@
     text-align: center;
     text-decoration: none;
     font-family: "Open Sans Semibold";
+
+    &:hover {
+      background-color: #54cac8;
+    }
   }
 }
 

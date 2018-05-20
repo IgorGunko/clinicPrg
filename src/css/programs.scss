@@ -33,9 +33,7 @@
             white-space: nowrap;
 
             &:after {
-                content: "\F105";
-                font: normal normal normal 14px/1 FontAwesome;
-                color: #60b8b7;
+                content: "";
                 width: 20px;
                 height: 20px;
                 position: absolute;
@@ -43,13 +41,11 @@
                 right: 15px;
                 margin-right: 5px;
                 display: inline-block;
-                border: 1px solid #60b8b7;
-                border-radius: 100%;
-                text-align: center;
-                font-size: 16px;
-                font-weight: bold;
-                padding-top: 1px;
                 vertical-align: middle;
+                background-size: contain;
+                background-repeat: no-repeat;
+                vertical-align: middle;
+                background-image: url('img/arrow-right.svg');
             }
         }
 
@@ -61,9 +57,7 @@
             color: #fff;
 
             &:after {
-                content: "\F107";
-                color: #fff;
-                border-color: #fff;
+                background-image: url('img/arrow-bottom-gray.svg')!important;
             }
         }
     }
