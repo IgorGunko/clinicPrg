@@ -316,18 +316,38 @@ ul.time-dropdown {
 		a{
 			font-size: 18px;
 			color: rgb(50, 28, 93);
-			border-top: 3px solid transparent;
+			//border-top: 3px solid transparent;
 			font-family: "Open Sans Semibold";
 
 			&:hover{
 				background-color: transparent;
-				border-top: 3px solid $site-color;
+				//border-top: 3px solid $site-color;
 				color: $site-color;
+				&:before {
+					max-width: 100%;
+				}
 			}
 			&:focus{
 				background-color: transparent;
-				border-top: 3px solid $site-color;
+				//border-top: 3px solid $site-color;
 				color: $site-color;
+			}
+
+			&:before {
+				content: '';
+				position: absolute;
+				max-width: 0;
+				width: 100%;
+				height: 3px;
+				background-color:  $site-color;;
+				top: 0;
+				left: 50%;
+				transform: translateX(-50%);
+				-webkit-transition: max-width 0.7s;
+				-moz-transition: max-width 0.7s;
+				-ms-transition: max-width 0.7s;
+				-o-transition: max-width 0.7s;
+				transition: max-width 0.7s;
 			}
 		}
 	}
