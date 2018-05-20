@@ -53,6 +53,9 @@
 
 		}
 	}
+	.complete-content {
+		margin-bottom: 300px;
+	}
 }
 @media #{$mobileMode} {
 	.indents-description-wrapper {
@@ -120,5 +123,10 @@
 		p {
 			font-size: 30px;
 		}
+	}
+
+	.complete-content {
+		margin-bottom: 0px;
+		background-color: #fff;
 	}
 }

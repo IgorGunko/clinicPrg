@@ -4,15 +4,15 @@
     position: relative;
     display: block;
     box-sizing: border-box;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -ms-touch-action: pan-y;
-    touch-action: pan-y;
-    -webkit-tap-highlight-color: transparent;
+    //-webkit-touch-callout: none;
+    //-webkit-user-select: all;
+    //-khtml-user-select: all;
+    //-moz-user-select: all;
+    //-ms-user-select: all;
+    //user-select: all;
+    //-ms-touch-action: pan-y;
+    //touch-action: pan-y;
+    //-webkit-tap-highlight-color: transparent;
 }
 .slick-list {
     position: relative;

@@ -6,6 +6,7 @@
 @media #{$mobileMode} {
 .footer {
   height: auto;
+  position: static;
 }
 .footer-menu{
   margin-top: 30px;
