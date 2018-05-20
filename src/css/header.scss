@@ -139,7 +139,6 @@ body{
 					height: 25px;
 					margin-right: 5px;
 					display: inline-block;
-					//border: 1px solid $site-color;
 					border-radius: 100%;
 					text-align: center;
 					font-size: 16px;
@@ -147,52 +146,14 @@ body{
 					padding-top: 3px;
 					vertical-align: middle;
 				}
-			}
-			.time{
-				i{
-					display: inline-block;
-					vertical-align: middle;
-					background-repeat: none;
-					width: 25px;
-					height: 25px;
-					background-size: contain;
-					background-repeat: no-repeat;
-					background-image: url('img/arrow-bottom.png');
-
-					&:hover {
-						background-image: url('img/arrow-bottom.png');
-					}
-				}
-				/*&:before {
-					content: "\f107";
-					font: normal normal normal 14px/1 FontAwesome;
-					color: $site-color;
-					width: 25px;
-					height: 25px;
-					margin-right: 5px;
-					display: inline-block;
-					border: 1px solid $site-color;
-					border-radius: 100%;
-					text-align: center;
-					font-size: 16px;
-					font-weight: bold;
-					padding-top: 3px;
-					vertical-align: middle;
-				}
-				&:hover {
-					&:before{
-						content: "\f106";
-					}
-				}*/
 			}
 			a{
 				text-decoration: none;
 				color: #fff;
 			}
-			&:hover .time-dropdown{
-				display: block;
-				max-height: 160px;
-			}
+			//&:hover .time-dropdown >div{
+			//	max-height: 180px;
+			//}
 		}
 		.recording-btn {
 			a {
@@ -218,17 +179,22 @@ body{
 	}
 	.time-dropdown{
 		position: absolute;
-		display: none;
-		-webkit-transition: max-height 1s;
-		-moz-transition: max-height 1s;
-		-ms-transition: max-height 1s;
-		-o-transition: max-height 1s;
-		transition: max-height 1s;
-		// "height: 0" not work with css transitions
-		max-height: 0;
+
+		>div {
+			width: 100%;
+			padding: 0 15px;
+			-webkit-transition: max-height 0.7s;
+			-moz-transition: max-height 0.7s;
+			-ms-transition: max-height 0.7s;
+			-o-transition: max-height 0.7s;
+			transition: max-height 0.7s;
+			max-height: 0;
+			overflow: hidden;
+		}
+
 	}
-	.open .time-dropdown{
-		display: block;
+	.open .time-dropdown >div{
+		max-height: 180px;
 	}
 }
 ul.time-dropdown {
@@ -480,9 +446,12 @@ ul.time-dropdown {
 .icon-arrow-bottom {
 	background-image: url('img/arrow-bottom.svg');
 
-	&:hover {
-		background-image: url('img/arrow-top.svg')!important;
-	}
+	//&:hover {
+	//	background-image: url('img/arrow-top.svg')!important;
+	//}
+}
+.open .icon-arrow-bottom {
+	background-image: url('img/arrow-top.svg')!important;
 }
 .icon-lang {
 	background-image: url('img/lang.svg');

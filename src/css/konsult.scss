@@ -61,13 +61,14 @@
 	[type="submit"] {
 		border: none;
 		font-size: 14px;
-		font-family: "Myriad_Pro";
+		font-family: "Open_Sans";
 		color: #fff;
 		background-color: #60b8b7;
 		height: 50px;
 		margin: 45px 0 22px 0;
 		letter-spacing: 2px;
 		border-radius: 0;
+		outline: none;
 
 		&:hover{
 			background-color: #54cac8;
