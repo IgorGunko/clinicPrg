@@ -313,24 +313,31 @@ ul.time-dropdown {
 .nav{
 	font-size: 0;
 	li{
-		a{
+		.link-item {
 			font-size: 18px;
 			color: rgb(50, 28, 93);
-			//border-top: 3px solid transparent;
 			font-family: "Open Sans Semibold";
 
 			&:hover{
 				background-color: transparent;
-				//border-top: 3px solid $site-color;
 				color: $site-color;
+				-webkit-transition: color 0.4s;
+				-moz-transition: color 0.4s;
+				-ms-transition: color 0.4s;
+				-o-transition: color 0.4s;
+				transition: color 0.4s;
+
 				&:before {
 					max-width: 100%;
 				}
 			}
 			&:focus{
 				background-color: transparent;
-				//border-top: 3px solid $site-color;
 				color: $site-color;
+
+				&:before {
+					max-width: 100%;
+				}
 			}
 
 			&:before {
@@ -367,10 +374,24 @@ ul.time-dropdown {
 	width: 100%;
 	left:0;
 	right:0;
+
+	//>div{
+	//	max-height: 500px;
+	//}
 }
-.dropdown-menu{
+.dropdown-menu {
 	border: none;
 	box-shadow: none;
+
+	//>div {
+	//	max-height: 0;
+	//	overflow: hidden;
+	//	-webkit-transition: max-height 1s;
+	//	-moz-transition: max-height 1s;
+	//	-ms-transition: max-height 1s;
+	//	-o-transition: max-height 1s;
+	//	transition: max-height 1s;
+	//}
 }
 .dropdown-menu>li {
 	display: table-cell;
