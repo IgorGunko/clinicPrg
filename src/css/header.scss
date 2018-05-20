@@ -537,3 +537,19 @@ ul.time-dropdown {
 			opacity: 1;
 		}
 }
+
+.modal-content {
+	border-radius: 0;
+}
+.close {
+	font-family: "Open_Sans";
+	font-size: 30px;
+	font-weight: normal;
+	outline: none;
+
+	span {
+		&:hover {
+			color: #000;
+		}
+	}
+}
