@@ -65,7 +65,8 @@
 		a {
 			bottom: 15px;
 			right: 10px;
-			display: block;
+			/*display: block;*/
+			opacity: 1;
 		}
 		p {
 			background-color: $emphasizeBackgroundColorDMW;
@@ -82,6 +83,7 @@
 				font-size: 18px;
 				width: 70%;
 				text-align: center;
+				color: $site-color;
 			}
 		}
 	}
@@ -112,6 +114,7 @@
 			width: 50%;
 			font-size: 18px;
 			margin: 0 0 0 8px;
+			color: $site-color;
 			/*height: auto;*/
 		}
 	}
