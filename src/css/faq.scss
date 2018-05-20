@@ -82,26 +82,21 @@
 	background-color: #fff;
 }
 .panel-heading a:before {
-    content: "\F106";
-    font: normal normal normal 14px/1 FontAwesome;
-    color: #60b8b7;
+    content: "";
     width: 20px;
     height: 20px;
     position: absolute;
     top: 2px;
     margin-right: 5px;
     display: inline-block;
-    border: 1px solid #60b8b7;
-    border-radius: 100%;
-    text-align: center;
-    font-size: 16px;
-    font-weight: bold;
-    padding-top: 1px;
     left: -35px;
-    vertical-align: middle;    
+	background-size: contain;
+	background-repeat: no-repeat;
+    vertical-align: middle;
+	background-image: url('img/arrow-bottom.svg');
 }
 .panel-heading a.collapsed:before {
-    content: "\F107";
+	background-image: url('img/arrow-top.svg')!important;
 }
 
 

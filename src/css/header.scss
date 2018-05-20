@@ -44,9 +44,9 @@ body{
 .contact-left{
 	padding-top: 5px;
 	float: left;
+
 	div{
 		display: inline-block;
-		vertical-align: middle;
 	}
 }
 .contact-right{
@@ -91,7 +91,7 @@ body{
 		display: none;
 		position: absolute;
 		padding-top: 10px;
-		width: 70px;
+		width: 60px;
 		left: -10px;
 		z-index: 9999;
 
@@ -317,7 +317,7 @@ ul.time-dropdown {
 	vertical-align: middle;
 	border-radius: 100%;
 	line-height: 15px;
-	font-family: "Open Sans Semibold";
+	font-family: "Open_Sans";
 
 	span{
 		font-size: 17px;
@@ -413,26 +413,20 @@ ul.time-dropdown {
 				font-family: "Open Sans Semibold";
 
 				&:before {
-					content: "\f105";
-					font: normal normal normal 14px/1 FontAwesome;
-					color: #ccc;
+					content: "";
 					width: 25px;
 					height: 25px;
 					margin-right: 10px;
 					display: inline-block;
-					border: 1px solid #ccc;
-					border-radius: 100%;
-					text-align: center;
-					font-size: 16px;
-					font-weight: bold;
-					padding-top: 3px;
+					background-size: contain;
+					background-repeat: no-repeat;
 					vertical-align: middle;
+					background-image: url('img/arrow-right-gray.svg');
 				}
 				&:hover {
 					color: $site-color;
 					&:before{
-						color: $site-color;
-						border: 1px solid $site-color;
+						background-image: url('img/arrow-right.svg')!important;
 					}
 				}
 			}
@@ -472,23 +466,26 @@ ul.time-dropdown {
 .sprite-icon {
 	display: inline-block;
 	vertical-align: middle;
-	background-repeat: none;
-	width: 28px;
-	height: 28px;
+	width: 25px;
+	height: 25px;
 	background-size: contain;
 	background-repeat: no-repeat;
 }
 .icon-arrow-top {
-	background-image: url('img/arrow-top.png');
+	background-image: url('img/arrow-top.svg');
 }
 .icon-arrow-right {
-	background-image: url('img/arrow-right.png');
+	background-image: url('img/arrow-right.svg');
 }
 .icon-arrow-bottom {
-	background-image: url('img/arrow-bottom.png');
+	background-image: url('img/arrow-bottom.svg');
+
+	&:hover {
+		background-image: url('img/arrow-top.svg')!important;
+	}
 }
 .icon-lang {
-	background-image: url('img/arrow-lang.png');
+	background-image: url('img/lang.svg');
 }
 .icon-phone {
 	background-image: url('img/tel.svg');

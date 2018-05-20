@@ -14,7 +14,7 @@
 		bottom: 30px;
 		right: 20px;
 				i {
-			color: $site-color;
+			/*color: $site-color;
 			width: 25px;
 			height: 25px;
 			display: inline-block;
@@ -23,7 +23,7 @@
 			text-align: center;
 			font-size: 16px;
 			font-weight: bold;
-			padding-top: 2px;
+			padding-top: 2px;*/
 		}
 	}
 	&:hover {
@@ -61,6 +61,9 @@
 			}
 		}
 		.manipulation__heading {
+			img {
+				height: 70px;
+			}
 			p {
 				color: $site-color;
 				-webkit-transition: all 1s ease-in-out;
@@ -114,6 +117,11 @@
 	display: flex;
 	align-items: flex-start;
 	margin-bottom: 52px;
+
+	img {
+		height: 70px;
+	}
+
 	p {
 		width: 100%;
 		font-size: 20px;
@@ -164,4 +172,107 @@
 .complete-content {
 	margin-bottom: 285px;
 	background-color: #fff;
+}
+
+.fix-panel {
+	position: fixed;
+	right: 10px;
+	top: 85%;
+
+	&__btn {
+		height: 60px;
+		width: 60px;
+		margin: -1.875rem 0 0 -1.875rem;
+	}
+}
+
+.bwidget {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+
+	&__icon {
+		left: 1px;
+		top: 1px;
+		width: auto;
+		height: auto;
+		bottom: 1px;
+		right: 1px;
+		transition-delay: .2s;
+	}
+}
+
+.circle-btn {
+	position: relative;
+	cursor: pointer;
+	background: currentColor;
+	border-radius: 50%;
+	transition: .2s ease;
+	border: none;
+	outline: none;
+	display: flex;
+	padding: 0;
+}
+
+.circle-btn svg {
+	margin: auto;
+	max-width: 50%;
+	max-height: 50%;
+	fill: #fff;
+
+	&:hover {
+		fill: #60b8b7;
+	}
+}
+
+.circle-btn--chat {
+	color: #60b8b7;
+	border: 1px solid #5fb9b8;
+
+	&:hover {
+		color: #fff;
+	}
+}
+
+.circle-btn--wide {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.circle-btn-wrapper:hover .circle-btn, .circle-btn:hover {
+	background: #fff;
+	box-shadow: inset 0 0 0 1px;
+}
+
+.circle-btn--facebook {
+	color: rgb(96, 184, 183);
+}
+
+.circle-btn--telegram {
+	color: rgb(96, 184, 183);
+}
+.circle-btn--chat:hover svg {
+	fill: #60b8b7;
+}
+
+.fix-panel__btn:hover .bwidget__icon--facebook {
+	transition-delay: 0s;
+	transform: translate3d(-100%, -60%, 2px);
+}
+
+.fix-panel__btn:hover .bwidget__icon--telegram {
+	transition-delay: 0s;
+	transform: translate3d(-100%, 55%, 1px);
+}
+
+.bwidget__icon--facebook:hover svg {
+	 fill: #4267b2;
+ }
+.bwidget__icon--telegram:hover svg {
+	fill: #4267b2;
 }
