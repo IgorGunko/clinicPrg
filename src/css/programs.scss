@@ -31,11 +31,11 @@
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
-            -webkit-transition: background-color 2s ease-in-out;
-            -moz-transition: background-color 2s ease-in-out;
-            -ms-transition: background-color 2s ease-in-out;
-            -o-transition: background-color 2s ease-in-out;
-            transition: background-color 2s ease-in-out;
+            -webkit-transition: all 2s ease-in-out;
+            -moz-transition: all 2s ease-in-out;
+            -ms-transition: all 2s ease-in-out;
+            -o-transition: all 2s ease-in-out;
+            transition: all 2s ease-in-out;
 
             &:after {
                 content: "";
@@ -51,6 +51,11 @@
                 background-repeat: no-repeat;
                 vertical-align: middle;
                 background-image: url('img/arrow-right.svg');
+                -webkit-transition: all 2s ease-in-out;
+                -moz-transition: all 2s ease-in-out;
+                -ms-transition: all 2s ease-in-out;
+                -o-transition: all 2s ease-in-out;
+                transition: all 2s ease-in-out;
             }
         }
 
@@ -60,11 +65,11 @@
         a {
             background-color: #60b8b7;
             color: #fff;
-            -webkit-transition: background-color .2s ease-in-out;
-            -moz-transition: background-color .2s ease-in-out;
-            -ms-transition: background-color .2s ease-in-out;
-            -o-transition: background-color .2s ease-in-out;
-            transition: background-color .2s ease-in-out;
+            -webkit-transition: all .2s ease-in-out;
+            -moz-transition: all .2s ease-in-out;
+            -ms-transition: all .2s ease-in-out;
+            -o-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
 
             &:after {
                 content: "";
@@ -81,18 +86,17 @@
     .item-dropdown {
         background-color: #60b8b7;
         padding-left: 35px;
-        -webkit-transition: max-height 1s ease-in-out;
-        -moz-transition: max-height 1s ease-in-out;
-        -ms-transition: max-height 1s ease-in-out;
-        -o-transition: max-height 1s ease-in-out;
-        transition: max-height 1s ease-in-out;
+        -webkit-transition: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
+        transition: all 1s ease-in-out;
         overflow: hidden;
         max-height: 0;
 
         li {
             list-style: none;
             padding: 15px;
-            /*display: none;*/
 
             &:last-child {
                 padding-bottom: 30px;
@@ -116,9 +120,6 @@
             -o-transition: all 1s ease-in-out;
             transition: all 1s ease-in-out;
             max-height: 300px;
-            li {
-                /*display: block;*/
-            }
         }
     }
 }
