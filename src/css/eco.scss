@@ -65,23 +65,22 @@
 			text-decoration: none;
 			letter-spacing: 2.0px;
 			&:after{
-				content: "\f105";
-				color: $site-color;
-				font: normal normal normal 16px/1 FontAwesome;
-				padding: 3px 9px 0 9px;
+				content: "";
 				width: 25px;
 				height: 25px;
 				display: inline-block;
-				border: 1px solid $site-color;
-				border-radius: 100%;
-				font-weight: bold;
+				vertical-align: middle;
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-image: url('img/arrow-right.svg');
 				margin-left: 10px;
 			}
 		}
 	}
 	.table {
 		margin: 0 0 130px 10px;
-		max-width: 96%;
+		max-width: 99%;
+
 		th {
 			height: 74px;
 			vertical-align: middle;
