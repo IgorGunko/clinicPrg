@@ -6,6 +6,7 @@
 	<title>Test</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="dist/bundle.css">
+	<link rel="stylesheet" href="src/css/jquery.animatedheadline.css">
 </head>
 <body>
 <header>
@@ -40,34 +41,36 @@
 										<div class="title">Лаврушинский переулок</div>
 										<ul class="roll">
 											<li>
-												<span class="label">Пн</span>
-												<span class="value">Закрыто</span>
+												<span class="label">Пн - Сб</span>
+												<span class="value">9.00 — 16.00</span>
 											</li>
-											<li>
-												<span class="label">Вт, Ср, Вс</span>
-												<span class="value">10 — 18</span>
-											</li>
-											<li>
-												<span class="label">Чт, Пт, Сб</span>
-												<span class="value">10 — 21</span>
-											</li>
+
+											<!--<li>-->
+												<!--<span class="label">Ср</span>-->
+												<!--<span class="value">9.00 — 16.00</span>-->
+											<!--</li>-->
+											<!--<li>-->
+												<!--<span class="label">Чт</span>-->
+												<!--<span class="value">9.00 — 16.00</span>-->
+											<!--</li>-->
 										</ul>
 									</div>
 									<div class="col-xs-6 col-sm-4 item">
 										<div class="title"><a href="" data-toggle="modal" data-target=".bs-example-modal-lg">Карта проезда</a></div>
 										<ul class="roll">
 											<li>
-												<span class="label">Пн</span>
-												<span class="value">Закрыто</span>
+												<span class="label">Вс</span>
+												<span class="value">Выходной</span>
 											</li>
-											<li>
-												<span class="label">Вт, Ср, Вс</span>
-												<span class="value">10 — 18</span>
-											</li>
-											<li>
-												<span class="label">Чт, Пт, Сб</span>
-												<span class="value">10 — 21</span>
-											</li>
+											<!--<li>-->
+												<!--<span class="label">Пт</span>-->
+												<!--<span class="value">9.00 — 16.00</span>-->
+											<!--</li>-->
+											<!--<li>-->
+												<!--<span class="label">Сб</span>-->
+												<!--<span class="value">9.00 — 16.00</span>-->
+											<!--</li>-->
+
 										</ul>
 									</div>
 								</div>
@@ -91,19 +94,35 @@
 					<img src="src/img/baby.png">
 				</div>
 				<div class="baby-count">
-					<div class="animation1">
-							<span>17,000</span>
-							<span> рожденных</span>
-					</div>
-					<div class="animation2">
-						<span>За 20 лет</span>
-						<span> работы</span>
-					</div>
+					<!--<div class="animation1">-->
+							<!--<span>17,000</span>-->
+							<!--<span> рожденных</span>-->
+					<!--</div>-->
+					<!--<div class="animation2">-->
+						<!--<span>За 20 лет</span>-->
+						<!--<span> работы</span>-->
+					<!--</div>-->
+					<section class="intro animate-rotate-3">
+						<div class="ah-headline">
+							<span class="ah-words-wrapper">
+								<b class="is-visible">17,000 </b>
+								<b>За  20  лет</b>
+							</span>
+						</div>
+					</section>
+					<section class="intro animate-rotate-4">
+						<div class="ah-headline">
+							<span class="ah-words-wrapper">
+								<b class="is-visible">рожденных </b>
+								<b style="width: 60px; margin-left: 9px;"> работы</b>
+							</span>
+						</div>
+					</section>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="nav-container container-fluid" data-spy="affix" data-offset-top="150">
+	<div class="nav-container container-fluid">
 		<div class="container">
 			<div class="row">
 					<nav class="navbar">
@@ -657,8 +676,9 @@
 </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+<script src="src/js/jquery.animatedheadline.js"></script>
 <script src="dist/bundle.js"></script>
-<script src="js/wow.min.js"></script>
+<script src="src/js/wow.min.js"></script>
 <script>
     new WOW().init();
 </script>
@@ -691,6 +711,15 @@
         $('#step4').click(function(){
             $('.pt-timeline__frontside-bar').css("width", "100%");
     	});
+    });
+
+    $(function() {
+        $('.animate-rotate-3').animatedHeadline({
+            animationType: 'rotate-3'
+        });
+        $('.animate-rotate-4').animatedHeadline({
+            animationType: 'rotate-3'
+        });
     });
 
 </script>

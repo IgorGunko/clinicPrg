@@ -1,4 +1,9 @@
-
+%animation-hover {
+	-webkit-transition: all .7s ease-in-out;
+	-moz-transition: all.7s ease-in-out;
+	-o-transition: all .7s ease-in-out;
+	transition: all .7s ease-in-out;
+}
 .animation-background {
 	background-color: $backgroundColorDMW;
 	margin: 55px 0;
@@ -28,23 +33,15 @@
 	}
 	&:hover {
 		background-color: $emphasizeBackgroundColorDMW;
-		-webkit-transition: all 1s ease-in-out;
-        -moz-transition: all 1s ease-in-out;
-        -o-transition: all 1s ease-in-out;
-        transition: all 1s ease-in-out;
+		@extend %animation-hover;
+
 		a {
 			opacity: 1;
-			-webkit-transition: all 1s ease-in-out;
-            -moz-transition: all 1s ease-in-out;
-            -o-transition: all 1s ease-in-out;
-            transition: all 1s ease-in-out;
+			@extend %animation-hover;
 		}
 		p {
 			background-color: $emphasizeBackgroundColorDMW;
-			-webkit-transition: all 1s ease-in-out;
-            -moz-transition: all 1s ease-in-out;
-            -o-transition: all 1s ease-in-out;
-            transition: all 1s ease-in-out;
+			@extend %animation-hover;
 		}
 		.description-wrapper_borer_right {
 			border-right: none;
@@ -53,10 +50,7 @@
 			p {
 				&:first-child {
 					color: $site-color;
-					-webkit-transition: all 1s ease-in-out;
-            		-moz-transition: all 1s ease-in-out;
-            		-o-transition: all 1s ease-in-out;
-            		transition: all 1s ease-in-out;
+					@extend %animation-hover;
 				}
 			}
 		}
@@ -66,10 +60,7 @@
 			}
 			p {
 				color: $site-color;
-				-webkit-transition: all 1s ease-in-out;
-            	-moz-transition: all 1s ease-in-out;
-            	-o-transition: all 1s ease-in-out;
-            	transition: all 1s ease-in-out;
+				@extend %animation-hover;
 			}
 		}
 	}
@@ -91,6 +82,7 @@
 			font-size: 20px;
 			width: 65%;
 			margin: 5px auto;
+			font-family: "Open Sans Semibold";
 		}
 	}
 }
@@ -127,6 +119,7 @@
 		font-size: 20px;
 		margin: 2px 0 0 10px;
 		height: 80px;
+		font-family: "Open Sans Semibold";
 	}
 }
 
@@ -275,4 +268,38 @@
  }
 .bwidget__icon--telegram:hover svg {
 	fill: #4267b2;
+}
+.intro {
+	color: #fff;
+}
+.ah-headline.rotate-3 {
+	text-align: center;
+	color: #fff;
+	b {
+		display: inline!important;
+	    font-family: "Open_Sans";
+		//letter-spacing: -1.5px;
+
+		i {
+			font-style: normal !important;
+			display: inline-block;
+			//width: 5px;
+
+			&:empty {
+				display: inline-block;
+				width:4px;
+			}
+		}
+		/*.in {
+			width: auto;
+		}
+		.out {
+			width: auto;
+		}*/
+	}
+}
+
+.ah-headline.rotate-3 i:empty {
+	display: inline-block;
+	width:4px;
 }

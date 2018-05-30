@@ -26,7 +26,7 @@
             padding: 17px;
             padding-right: 45px;
             color: #000;
-            background-color: #d1e6e3;
+            background: #d1e6e3;
             text-decoration: none;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -127,6 +127,7 @@
 .programs-second{
     padding-left: 25px; 
     ol {
+        max-width: 625px;
         background-color: #fff;
         padding: 40px 0 0 30px;
         margin: 0;
