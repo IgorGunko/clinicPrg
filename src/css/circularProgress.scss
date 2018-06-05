@@ -9,18 +9,33 @@
 }
 .progress-item{
   text-align: center;
+
   p{
-    font-size: 16px;
-    margin-top: 55px;
-    padding: 0px 55px;
+    width: 100%;
     display: inline-block;
     color: #fff;
     letter-spacing: 0.9px;
+
+    &:first-child {
+      font-size: 18px;
+      margin-top: 65px;
+      font-family: "Open Sans Semibold";
+    }
+
+    &:nth-child(2) {
+      font-size: 14px;
+      padding: 0 85px;
+    }
+    span {
+      color: #321c5d;
+      font-weight: bold;
+    }
   }
+
 }
 
 .progress-circle{
-  margin-top: 50px;
+  margin-top: 25px;
   width: 200px;
   height: 200px;
   position: relative;

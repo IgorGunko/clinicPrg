@@ -1,5 +1,16 @@
 @media #{$tableMode} {
+  .progress-item{
+    p{
+      &:first-child {
+        margin-top: 55px;
+      }
 
+      &:nth-child(2) {
+        padding: 0 10px;
+      }
+    }
+
+  }
 }
 
 @media #{$mobileMode} {
