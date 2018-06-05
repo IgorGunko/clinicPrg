@@ -278,28 +278,28 @@
 	b {
 		display: inline!important;
 	    font-family: "Open_Sans";
-		//letter-spacing: -1.5px;
+		font-weight: normal;
 
 		i {
 			font-style: normal !important;
-			display: inline-block;
-			//width: 5px;
-
-			&:empty {
-				display: inline-block;
-				width:4px;
-			}
 		}
-		/*.in {
-			width: auto;
-		}
-		.out {
-			width: auto;
-		}*/
 	}
 }
-
-.ah-headline.rotate-3 i:empty {
-	display: inline-block;
-	width:4px;
+.animate-rotate-3 {
+	span {
+		b {
+			i {
+				font-size: 17px;
+			}
+		}
+	}
+}
+.animate-rotate-4 {
+	span {
+		b {
+			i {
+				font-size: 12px;
+			}
+		}
+	}
 }
