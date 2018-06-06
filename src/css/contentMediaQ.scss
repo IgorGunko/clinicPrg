@@ -3,7 +3,7 @@
 		padding: 25px 0 35px 0;
 	}
 	.emphasize-background {
-		a {
+		.emphasize-arrow {
 			bottom: 25px;
 			right: 15px;
 		}
@@ -65,10 +65,9 @@
 	}
 	.emphasize-background {
 		background-color: $emphasizeBackgroundColorDMW;
-		a {
+		.emphasize-arrow {
 			bottom: 15px;
 			right: 10px;
-			/*display: block;*/
 			opacity: 1;
 		}
 		p {

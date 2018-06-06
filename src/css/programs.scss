@@ -275,16 +275,26 @@
             display: inline;
             border-bottom: 1px solid #321c5d;
         }
-
     }
-    b {
+    a {
         color: #321c5d!important;
-        font-family: "Open Sans Semibold";
+        text-decoration: none;
+        display: inline;
+        border-bottom: 1px solid #321c5d;
     }
+
     li {
         color: #321c5d!important;
     }
 }
+
+.dynamic-content-container {
+    b {
+        color: #321c5d!important;
+        font-family: "Open Sans Semibold"!important;
+    }
+}
+
 
      
 
