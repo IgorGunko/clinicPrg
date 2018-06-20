@@ -26,6 +26,11 @@
           color: $site-color;
         }
       }
+
+      .underline-link {
+        color: $site-color;
+        text-decoration: underline;
+      }
     }
   }
   .about_clinic{
@@ -50,12 +55,20 @@
   display: inline-block;
   line-height: 1.5;
   }
+  li {
+    &:last-child {
+      line-height: 15px;
+    }
+  }
 }
+
 .socials {
   margin-top: 57px;
   margin-bottom: 30px;
+  text-align: center;
 
   p{
+    margin-top: 25px;
     color: #fff;
     font-family: "Open Sans Semibold";
     text-align: center;
@@ -70,7 +83,7 @@
     li{
       list-style: none;
       display: inline-block;
-      margin: 0 15px;
+      margin: 0 10px;
       vertical-align: middle;
       a{
         width: 45px;
@@ -101,6 +114,66 @@
           background-color: #0075ff;
         }
       }
+      .viber{
+        border: 1px solid #7c519b;
+        background-color: #7c519b;
+        &:hover{
+          border: 1px solid #5e317d;
+          background-color: #5e317d;
+        }
+      }
+    }
+  }
+}
+
+.operators {
+  display: inline-block;
+  padding-left: 20px;
+
+  a {
+    color: #fff;
+    width: 170px;
+    display: inline-block;
+    letter-spacing: 1px;
+    text-decoration: none;
+    line-height: 20px;
+    position: relative;
+
+    span {
+      color: $site-color;
+    }
+   
+    
+    &:before {
+      content: '';
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      left: -5px;
+      top: 2px;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+  }
+  .city {
+    &:before {
+      background-image: url("img/city-icon.png");
+    }
+  }
+  .vodafone {
+    &:before {
+      background-image: url("img/vodafone-icon.png");
+    }
+  }
+  .kyivstar {
+    &:before {
+      background-image: url("img/kyivstar-icon.png");
+    }
+  }
+  .life {
+    &:before {
+      background-image: url("img/life-icon.png");
     }
   }
 }

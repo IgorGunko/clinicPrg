@@ -147,6 +147,9 @@ body{
 					padding-top: 3px;
 					vertical-align: middle;
 				}
+				a {
+					color: rgb(51, 51, 51);
+				}
 			}
 			a{
 				text-decoration: none;
@@ -376,24 +379,10 @@ ul.time-dropdown {
 	width: 100%;
 	left:0;
 	right:0;
-
-	//>div{
-	//	max-height: 500px;
-	//}
 }
 .dropdown-menu {
 	border: none;
 	box-shadow: none;
-
-	//>div {
-	//	max-height: 0;
-	//	overflow: hidden;
-	//	-webkit-transition: max-height 1s;
-	//	-moz-transition: max-height 1s;
-	//	-ms-transition: max-height 1s;
-	//	-o-transition: max-height 1s;
-	//	transition: max-height 1s;
-	//}
 }
 .dropdown-menu>li {
 	display: table-cell;

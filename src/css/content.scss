@@ -171,8 +171,8 @@
 	top: 50%;
 
 	&__btn {
-		height: 65px;
-		width: 65px;
+		height:100px;
+		width: 100px;
 		margin: -1.875rem 0 0 -1.875rem;
 	}
 }
@@ -255,11 +255,18 @@
 		color: #321c5d;
 	}
 }
+.circle-btn--viber {
+	color: #321c5d;
+
+	&:hover {
+		color: #321c5d;
+	}
+}
 .circle-btn--chat:hover svg {
 	fill: #321c5d
 }
 
-.fix-panel__btn:hover .bwidget__icon--facebook {
+/*.fix-panel__btn:hover .bwidget__icon--facebook {
 	transition-delay: 0s;
 	transform: translate3d(-100%, -60%, 2px);
 }
@@ -267,13 +274,30 @@
 .fix-panel__btn:hover .bwidget__icon--telegram {
 	transition-delay: 0s;
 	transform: translate3d(-100%, 55%, 1px);
-}
+}*/
 
 .bwidget__icon--facebook:hover svg {
 	 fill: #321c5d
  }
 .bwidget__icon--telegram:hover svg {
 	fill: #321c5d
+}
+.bwidget__icon--viber:hover svg {
+	fill: #321c5d
+}
+
+.open .bwidget__icon--facebook {
+	transition-delay: 0s;
+	transform: translate3d(0%, -110%, 2px);
+}
+
+.open .bwidget__icon--telegram {
+	transition-delay: 0s;
+	transform: translate3d(-110%, 0%, 1px);
+}
+.open .bwidget__icon--viber {
+	transition-delay: 0s;
+	transform: translate3d(0%, 110%, 1px);
 }
 .intro {
 	color: #fff;
